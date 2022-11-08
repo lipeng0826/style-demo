@@ -1,12 +1,43 @@
-.hide-scroll {
-  &::-webkit-scrollbar,
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+  }
+  
   &::-webkit-scrollbar-thumb {
-    visibility: hidden;
+    background-color: #d9d9d9;
+    border-radius: 32px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 32px;
   }
 }
 
-.three-dot {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.scroll-bar2 {
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 10px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background-color: #bae7ff;
+    border-radius: 32px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background-color: #bae7ff;
+    border-radius: 32px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background-color: #d9d9d9;
+    border-radius: 32px;
+  }
+  
+  &:hover::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 32px;
+  }
 }
