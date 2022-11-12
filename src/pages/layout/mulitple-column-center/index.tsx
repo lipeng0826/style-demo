@@ -30,6 +30,16 @@ function Second(props: { dataList: Number[] }) {
   )
 }
 
+function Third(props: { dataList: Number[] }) {
+  return (
+    <div className="multiple-column-center3">
+      {props.dataList.map((item) => (
+        <Box key={item} />
+      ))}
+    </div>
+  )
+}
+
 const InteractGameItem = (props: any) => {
   return (
     <div style={{paddingTop: 30}}>
@@ -41,7 +51,7 @@ const InteractGameItem = (props: any) => {
           <Second dataList={dataList} />
         </Tabs.TabPane>
         <Tabs.TabPane tab="第三种方案" key="3">
-          Content of Tab Pane 3
+        <Third dataList={dataList} />
         </Tabs.TabPane>
       </Tabs>
     </div>

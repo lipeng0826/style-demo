@@ -38,3 +38,21 @@
     flex-basis: 33.3%; // 项目占据主轴空间，可以使用width的单位
   }
 }
+
+// 第三种方案
+.multiple-column-center3 {
+  display: grid;
+  // justify-content: space-around; // 中间的间距比两边的间距大
+  justify-content: space-between; // 使用这个，他们之间的间距是固定的，但是左右两边的没有边界
+ }
+ 
+   @media screen and (min-width: 1472px) {
+    .multiple-column-center3 {
+      grid-template-columns: 268px 268px 268px 268px; // 容器宽度，长了4列，也可以设置百分比，内部盒子居中
+    }
+  }
+  @media screen and (max-width: 1472px) {
+    .multiple-column-center3 {
+      grid-template-columns: 268px 268px 268px; // 容器宽度，短了3列
+    }
+  }
