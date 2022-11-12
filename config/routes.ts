@@ -7,6 +7,13 @@
     hideInMenu: true,
   },
   {
+    path: '/layout/multiple-column-center',
+    name: 'box',
+    component: './layout/mulitple-column-center/index.tsx',
+    layout: false,
+    hideInMenu: true,
+  },
+  {
     path: '/element/box',
     name: 'box',
     component: './element/box/index.jsx',

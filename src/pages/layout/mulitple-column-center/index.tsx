@@ -1,0 +1,37 @@
+import React, { useState } from 'react';
+import { Tabs } from 'antd';
+import Box from '@/pages/element/box/index';
+import './index.less';
+import { getArray } from '@/utils/utils';
+
+const dataList = getArray(20);
+
+function First(props: { dataList: Number[] }) {
+  return (
+    <div className="multiple-column-center1">
+      {props.dataList.map((item) => (
+        <Box key={item} />
+      ))}
+    </div>
+  )
+}
+
+const InteractGameItem = (props: any) => {
+  return (
+    <div style={{paddingTop: 30}}>
+      <Tabs defaultActiveKey="1">
+        <Tabs.TabPane tab="第一种方案" key="1">
+          <First dataList={dataList} />
+        </Tabs.TabPane>
+        <Tabs.TabPane tab="第二种方案" key="2">
+          Content of Tab Pane 2
+        </Tabs.TabPane>
+        <Tabs.TabPane tab="第三种方案" key="3">
+          Content of Tab Pane 3
+        </Tabs.TabPane>
+      </Tabs>
+    </div>
+  );
+};
+
+export default InteractGameItem;

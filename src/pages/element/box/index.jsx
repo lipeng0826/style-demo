@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { Button } from 'antd';
 import './index.less';
 
+const ImgUrl = "https://q-fe.aixuexi.com/cloud/interact-game/1667790947488-7ae604d8c887:dxss2.png";
 const InteractItem = (props) => {
   return (
-    <div className="interact-template-container-item" style={{ width: 268 }}>
+    <div className="box-item">
       <div className="img">
-        <img src="https://q-fe.aixuexi.com/cloud/interact-game/1667790947488-7ae604d8c887:dxss2.png" />
+        <img src={ImgUrl} />
         <div className="flag">
           <span className="topic-type">大显身手</span>
           <span className="module">模板</span>
