@@ -10,7 +10,21 @@ function First(props: { dataList: Number[] }) {
   return (
     <div className="multiple-column-center1">
       {props.dataList.map((item) => (
-        <Box key={item} />
+        // class用来让盒子宽度100%,正常这个一般都写到子组件上了
+        <Box className="first-box-item" key={item} />
+      ))}
+    </div>
+  )
+}
+
+
+function Second(props: { dataList: Number[] }) {
+  return (
+    <div className="multiple-column-center2">
+      {props.dataList.map((item) => (
+       <div className='box-item-wrapper'>
+         <Box key={item} />
+       </div>
       ))}
     </div>
   )
@@ -24,7 +38,7 @@ const InteractGameItem = (props: any) => {
           <First dataList={dataList} />
         </Tabs.TabPane>
         <Tabs.TabPane tab="第二种方案" key="2">
-          Content of Tab Pane 2
+          <Second dataList={dataList} />
         </Tabs.TabPane>
         <Tabs.TabPane tab="第三种方案" key="3">
           Content of Tab Pane 3

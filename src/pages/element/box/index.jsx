@@ -5,7 +5,7 @@ import './index.less';
 const ImgUrl = "https://q-fe.aixuexi.com/cloud/interact-game/1667790947488-7ae604d8c887:dxss2.png";
 const InteractItem = (props) => {
   return (
-    <div className="box-item">
+    <div className={`box-item ${props.className || ''}`}>
       <div className="img">
         <img src={ImgUrl} />
         <div className="flag">

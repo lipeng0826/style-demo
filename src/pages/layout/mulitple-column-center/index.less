@@ -2,20 +2,39 @@
 
 // 第一种方案
 .multiple-column-center1 {
-    display: grid;
-    grid-gap: 12px;
-    // 设置每个元素的最小，最大宽度
-    grid-template-columns: repeat(auto-fill, minmax(268PX, 1fr));
-    > .box-item {
-        // 设置盒子的宽度为100%
-        width: 100%;
-    }
+  display: grid;
+  grid-gap: 12px;
+  // 设置每个元素的最小，最大宽度
+  grid-template-columns: repeat(auto-fill, minmax(268PX, 1fr));
+
+  >.first-box-item {
+    // 设置盒子的宽度为100%
+    width: 100%;
+  }
 }
 
 // 第二种方案
-.multiple-column-center1 {
-    display: grid;
-    grid-gap: 12px;
-    // 设置每个元素的最小，最大宽度
-    grid-template-columns: repeat(auto-fill, minmax(268PX, 1fr));
+// 父元素
+.multiple-column-center2 {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+// 子元素 根据屏幕宽度，设置不同的列数量
+@media screen and (min-width: 1472px) {
+  // 子盒子的容器，然后子盒子在里面居中对齐
+  .box-item-wrapper {
+    flex-basis: 25%; // 项目占据主轴空间，可以使用width的单位
+    // 子盒子居中对齐
+    >div {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1472px) {
+  .box-item-wrapper {
+    flex-basis: 33.3%; // 项目占据主轴空间，可以使用width的单位
+  }
 }
