@@ -15,12 +15,12 @@
   position: relative;
   z-index: 15;
   .courseCard_cover {
-    height: 205px;
-    width: 156px;
+    height: 165px;
+    width: 136px;
 
     .courseCard_cover_name {
       position: relative;
-      top: 149px;
+      top: 129px;
       margin-left: 12px;
       margin-right: 30px;
       color: @colorWhite;
@@ -30,13 +30,7 @@
       line-height: 19px;
       letter-spacing: 0.05em;
       text-align: right;
-
-      overflow : hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      /* autoprefixer: off */
-      -webkit-box-orient: vertical;
+      .mul-ellipsis(2)
     }
   }
 

@@ -12,8 +12,8 @@ const InteractItem = (props) => {
   return (
     <>
       <div className="courseCard">
-        <div className="courseCard_cover" className="shuxue_xx">
-          <div className="courseCard_cover_name">schemeName11111</div>
+        <div className={`courseCard_cover ${'shuxue_xx'}`}>
+          <div className="courseCard_cover_name">春季春季二年级数学知识巩固体系学习大迭代</div>
         </div>
         <div className="courseCard_info">
           <div>
