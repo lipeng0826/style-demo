@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tabs } from 'antd';
-import Box from '@/pages/element/box/index';
+import Box from '@/pages/element/box/box-style-1/index.jsx';
 import './index.less';
 import { getArray } from '@/utils/utils';
 
