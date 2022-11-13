@@ -20,10 +20,16 @@ const Welcome: React.FC = () => {
           <Link to="/element/scroll">滚动条样式(scroll-bar)</Link>
         </div>
         <div>
-          <Link to="/element/box">一个盒子样式(box)</Link>
+          <Link to="/element/box">盒子样式(box)</Link>
         </div>
       </div>
       <div>antd相关</div>
+      <div>
+        <div>小样式</div>
+        <div>
+          <Link to="/small-style/index">入口</Link>
+        </div>
+      </div>
     </div>
   );
 };

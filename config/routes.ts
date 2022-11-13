@@ -6,6 +6,7 @@
     layout: false,
     hideInMenu: true,
   },
+  // 布局
   {
     path: '/layout/multiple-column-center',
     name: 'box',
@@ -13,6 +14,7 @@
     layout: false,
     hideInMenu: true,
   },
+  // 元素
   {
     path: '/element/box',
     name: 'box',
@@ -24,6 +26,14 @@
     path: '/element/scroll',
     name: 'scroll',
     component: './element/scroll-bar',
+    layout: false,
+    hideInMenu: true,
+  },
+  // 小样式
+  {
+    path: '/small-style/index',
+    name: 'small-style',
+    component: './smallStyle/index.jsx',
     layout: false,
     hideInMenu: true,
   },

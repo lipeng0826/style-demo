@@ -1,0 +1,182 @@
+@import '../../../../styles/common.less';
+
+// 互动模板列表
+@colorWhite: #FFFFFF;
+@colorGray: #70859F;
+.courseCard {
+  display: flex;
+  width: 380px;
+  height: 206px;
+  background: #1c293e;
+  border-radius: 24px;
+  padding: 20.32px 0 20.32px 22.26px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 15;
+  .courseCard_cover {
+    height: 205px;
+    width: 156px;
+
+    .courseCard_cover_name {
+      position: relative;
+      top: 149px;
+      margin-left: 12px;
+      margin-right: 30px;
+      color: @colorWhite;
+      opacity: 0.7;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.05em;
+      text-align: right;
+
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  .yingyu_xx {
+    background: url('./assets/img/yingyu_xx.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .yingyu_cz {
+    background: url('./assets/img/yingyu_cz.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .yuwen_xx {
+    background: url('./assets/img/yuwen_xx.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .yuwen_cz {
+    background: url('./assets/img/yuwen_cz.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .shuxue_xx {
+    background: url('./assets/img/shuxue_xx.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  .shuxue_cz {
+    background: url('./assets/img/shuxue_cz.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .wuli_cz {
+    background: url('./assets/img/wuli_cz.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .huaxue_cz {
+    background: url('./assets/img/huaxue_cz.png') no-repeat;
+    background-size: 100% 100%;
+  }
+  .courseCard_info {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: 205px;
+    position: relative;
+    .season {
+      display: inline-block;
+      // margin-right: 4px;
+      height: 32px;
+    }
+    .version {
+      display: inline-block;
+      height: 32px;
+    }
+    .season,
+    .version {
+      font-size: 14px;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 8px;
+      color: @colorWhite;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+      padding: 0 7px;
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 12px 0;
+      color: #BCCDD7;
+      line-height: 28px;
+      padding-right: 20px;
+
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      /* autoprefixer: off */
+      -webkit-box-orient: vertical;
+      white-space: initial;
+    }
+    .vip >.vip_img {
+      width: 100px;
+      height: 28px;
+    }
+
+    .courseCard_info_bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      padding-right: 20px;
+      .teacher_info {
+        height: 24px;
+        .teacher_icon {
+          color: @colorGray;
+          position: relative;
+          top: -4px;
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          // background: url('./assets/img/teacher.png') center/contain;
+          // background-repeat: no-repeat;
+        }
+
+        .teacher_name {
+          display: inline-block;
+          position: relative;
+          height: 24px;
+          color: @colorGray;
+          font-size: 16px;
+          line-height: 24px;
+          max-width: 100px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+      }
+
+      .lesson_info {
+        height: 24px;
+        font-size: 16px;
+        color: @colorGray;
+        line-height: 24px;
+      }
+    }
+  }
+  .collection{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 40px;
+    z-index: 88;
+    border-radius: 0px 24px 0px 8px;
+  }
+}
