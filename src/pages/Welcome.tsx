@@ -22,6 +22,9 @@ const Welcome: React.FC = () => {
         <div>
           <Link to="/element/box">盒子样式(box)</Link>
         </div>
+        <div>
+          <Link to="/element/mul-columns-dot">多列省略布局</Link>
+        </div>
       </div>
       <div>antd相关</div>
       <div>

@@ -1,0 +1,47 @@
+@import '../../../styles/common.less';
+.lesson-in-info-title-wrapper {
+    padding: 80px;
+}
+.lesson-in-info-title {
+    flex: 1;
+    width: 0;
+    height: 22px;
+    .ellipsis();
+
+    .title {
+      width: 364px;
+      height: 22px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #505873;
+      padding-right: 16px;
+      margin-right: -4px;
+    }
+    .split {
+      display: inline-block;
+      width: 1.5px;
+      height: 16px;
+      margin: 0 12px;
+      background: #505873;
+      position: relative;
+      top: 3px;
+    }
+    .item {
+      line-height: 22px;
+      border-left: 1px solid #EBEDF0;
+      padding: 0 16px;
+      color: #70788C;
+      font-size: 14px;
+      font-weight: 400;
+      margin-right: -4px;
+    }
+
+    .limit-content {
+      display: inline-block;
+      max-width: 170px;
+      vertical-align: top;
+      .ellipsis();
+    }
+
+  }
