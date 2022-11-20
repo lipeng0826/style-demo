@@ -6,7 +6,7 @@ import { getArray } from '@/utils/utils';
 
 const dataList = getArray(20);
 
-function First(props: { dataList: Number[] }) {
+export const First = (props: { dataList: Number[] }) => {
   return (
     <div className="multiple-column-center1">
       {props.dataList.map((item) => (

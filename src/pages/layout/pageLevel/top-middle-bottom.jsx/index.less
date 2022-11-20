@@ -1,0 +1,107 @@
+.create-interact-game {
+  background: #F0F2F5;
+  min-height: calc(100vh);
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    background: #ffffff;
+    padding: 0 24px;
+    box-shadow: 0px 1px 4px rgba(0, 21, 41, 0.08);
+
+    .title {
+      font-family: 'Microsoft YaHei UI';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #505873;
+      width: 150px;
+    }
+
+    .steps {
+      width: 410px;
+    }
+
+    .step-one-btn {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+    }
+
+    .step-two-btn {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+    }
+
+    .ant-steps-item-title {
+      font-size: 14px;
+      color: #303858 !important;
+    }
+
+    .ant-steps-item-wait {
+      .ant-steps-item-icon {
+        color: #70788C !important;
+
+        &>span {
+          color: #70788C !important;
+        }
+      }
+
+      .ant-steps-item-title {
+        font-size: 14px;
+        color: #70788C !important;
+      }
+    }
+
+
+    .ant-btn {
+      color: #1890FF;
+      background: #FFFFFF;
+      border: 1px solid #1890FF;
+      border-radius: 6px;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .save-btn {
+      width: 90px;
+      height: 32px;
+      color: #1890FF;
+      border: 1px solid #1890FF;
+      border-radius: 6px;
+    }
+  }
+
+  &-step1,
+  &-step2 {
+    margin: 24px 24px 24px 24px;
+    background: #fff;
+    height: calc(100vh - 112px);
+    display: flex;
+    justify-content: center;
+
+    .tips {
+      color: #1890FF;
+      cursor: pointer;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-bottom: 60px;
+    overflow-y: auto;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: 40px;
+  }
+}

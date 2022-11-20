@@ -11,6 +11,9 @@ const Welcome: React.FC = () => {
       <div>
         <div>布局相关</div>
         <div>
+          <Link to="/layout/pageLevel/top-middle-bottom">上中下布局</Link>
+        </div>
+        <div>
           <Link to="/layout/multiple-column-center">多列布局（mulitple-column-center）</Link>
         </div>
       </div>

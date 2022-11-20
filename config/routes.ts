@@ -8,6 +8,13 @@
   },
   // 布局
   {
+    path: '/layout/pageLevel/top-middle-bottom',
+    name: 'box',
+    component: './layout/pageLevel/top-middle-bottom.jsx',
+    layout: false,
+    hideInMenu: true,
+  },
+  {
     path: '/layout/multiple-column-center',
     name: 'box',
     component: './layout/mulitple-column-center/index.tsx',
