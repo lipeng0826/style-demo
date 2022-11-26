@@ -8,55 +8,73 @@
   },
   // 布局
   {
-    path: '/layout/pageLevel/top-middle-bottom',
-    name: 'box',
-    component: './layout/pageLevel/top-middle-bottom.jsx',
+    path: '/layout',
+    name: 'layout',
     layout: false,
     hideInMenu: true,
-  },
-  {
-    path: '/layout/multiple-column-center',
-    name: 'box',
-    component: './layout/mulitple-column-center/index.tsx',
-    layout: false,
-    hideInMenu: true,
+    routes: [
+      {
+        name: 'top-middle-bottom',
+        path: '/layout/pageLevel/top-middle-bottom',
+        component: './layout/pageLevel/top-middle-bottom.jsx',
+      },
+      {
+        path: '/layout/multiple-column-center',
+        name: 'multiple-column-center',
+        component: './layout/mulitple-column-center/index.tsx',
+      },
+    ],
   },
   // 元素
   {
-    path: '/element/box',
-    name: 'box',
-    component: './element/box/index.jsx',
+    path: '/element',
+    name: 'element',
     layout: false,
     hideInMenu: true,
+    routes: [
+      {
+        path: '/element/box',
+        name: 'box',
+        component: './element/box/index.jsx',
+      },
+      {
+        path: '/element/scroll',
+        name: 'scroll',
+        component: './element/scroll-bar',
+      },
+      {
+        path: '/element/mul-columns-dot',
+        name: 'mul-columns-dot',
+        component: './element/mul-columns-dot/index.jsx',
+      },
+    ]
   },
   {
-    path: '/element/scroll',
-    name: 'scroll',
-    component: './element/scroll-bar',
+    path: '/antd',
+    name: 'antd',
     layout: false,
     hideInMenu: true,
-  },
-  {
-    path: '/element/mul-columns-dot',
-    name: 'scroll',
-    component: './element/mul-columns-dot/index.jsx',
-    layout: false,
-    hideInMenu: true,
-  },
-  {
-    path: '/antd/message',
-    name: 'scroll',
-    component: './antd/message/index.jsx',
-    layout: false,
-    hideInMenu: true,
+    routes: [
+      {
+        path: '/antd/message',
+        name: 'message',
+        component: './antd/message/index.jsx',
+      }
+    ]
   },
   // 小样式
   {
-    path: '/small-style/index',
+    path: '/small-style',
     name: 'small-style',
-    component: './smallStyle/index.jsx',
     layout: false,
     hideInMenu: true,
+    routes: [
+      {
+        path: '/small-style/index',
+        name: 'small-style',
+        component: './smallStyle/index.jsx',
+      },
+    ]
   },
   {
     component: './404',
