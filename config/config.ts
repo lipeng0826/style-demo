@@ -15,8 +15,8 @@ export default defineConfig({
     https:
       https === '1'
         ? {
-            key: path.resolve(__dirname, '../https/test.aaa.com+3-key.pem'),
-            cert: path.resolve(__dirname, '../https/test.aaa.com+3.pem'),
+            key: path.resolve(__dirname, '../https/test.test.com+3-key.pem'),
+            cert: path.resolve(__dirname, '../https/test.test.com+3.pem'),
           }
         : undefined,
   },
