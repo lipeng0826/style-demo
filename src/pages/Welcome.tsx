@@ -31,6 +31,9 @@ const Welcome: React.FC = () => {
       </div>
       <div>antd相关</div>
       <div>
+        <Link to="/antd/message">覆盖message样式(scroll-bar)</Link>
+      </div>
+      <div>
         <div>小样式</div>
         <div>
           <Link to="/small-style/index">入口</Link>

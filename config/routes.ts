@@ -43,6 +43,13 @@
     layout: false,
     hideInMenu: true,
   },
+  {
+    path: '/antd/message',
+    name: 'scroll',
+    component: './antd/message/index.jsx',
+    layout: false,
+    hideInMenu: true,
+  },
   // 小样式
   {
     path: '/small-style/index',
