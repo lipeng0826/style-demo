@@ -1,0 +1,117 @@
+@import '../colors.less';
+
+// select
+.ant-select-selection {
+  border-color: @gray-7;
+
+  &:hover {
+    border-color: @blue-1;
+  }
+}
+
+.ant-select-selection-selected-value {
+  color: @gray-1;
+}
+
+.ant-select-selection__clear {
+  color: @gray-4;
+
+  .anticon.anticon-close-circle {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+
+    svg {
+      display: none;
+    }
+
+    &::after {
+      content: "\e79b";
+    }
+  }
+}
+
+.ant-select-arrow {
+  color: @gray-4;
+
+  .anticon.ant-select-arrow-icon {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+
+    svg {
+      display: none;
+    }
+
+    &::after {
+      content: "\e6cb";
+    }
+  }
+}
+
+.ant-select-open {
+  .ant-select-selection {
+    border-color: @blue-1;
+  }
+
+  .ant-select-arrow-icon {
+    transform: rotate(180deg) !important;
+  }
+}
+
+.ant-select-dropdown {
+  .ant-select-dropdown-menu {
+    padding: 6px 0;
+
+    .ant-select-dropdown-menu-item {
+      color: @gray-2;
+      padding: 5px 16px;
+
+      &.ant-select-dropdown-menu-item-active:not(.ant-select-dropdown-menu-item-disabled) {
+        background-color: @gray-10;
+      }
+
+      &:hover {
+        background-color: @gray-9  !important;
+      }
+
+      &.ant-select-dropdown-menu-item-selected {
+        color: @blue-1;
+        background-color: @gray-10;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.ant-select-selection--multiple {
+  .ant-select-selection__choice {
+    background: @gray-7;
+    border-radius: 2px;
+    border-color: @gray-7;
+    margin-right: 10px;
+  }
+
+  .ant-select-selection__choice__content {
+    color: @gray-3;
+    max-width: 100px;
+  }
+
+  .anticon-close {
+    color: @gray-4;
+  }
+}
+
+.ant-select-disabled {
+  .ant-select-selection-selected-value {
+    color: #98A2B2;
+  }
+}
+
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active {
+  border-color: @blue-1
+}

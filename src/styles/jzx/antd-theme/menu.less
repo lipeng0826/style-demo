@@ -1,0 +1,138 @@
+@import '../colors.less';
+
+@menu-collapsed-width: 44px;
+
+.ant-menu {
+  color: @gray-2;
+}
+
+.ant-menu-submenu-title {
+  padding-left: 16px!important;
+  // transition: none;
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  .anticon {
+    margin-right: 8px;
+    transition: none;
+    line-height: 0!important;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.ant-menu-item {
+  padding-left: 16px!important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  a {
+    color: @gray-2;
+
+    .anticon {
+      display: inline-block;
+    }
+    .anticon.selected {
+      display: none;
+    }
+
+    &.router-link-active,
+    &:hover {
+      color: @blue-1;
+      .anticon {
+        display: none;
+      }
+      .anticon.selected {
+        display: inline-block!important;
+      }
+    }
+    
+  }
+
+  &.ant-menu-item-selected {
+    a {
+      color: @blue-1;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &:hover {
+    a {
+      color: @blue-1;
+    }
+  }
+
+  .anticon {
+    margin-right: 8px;
+    transition: none;
+    line-height: 0!important;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.ant-menu-sub {
+  .ant-menu-item {
+    padding-left: 40px!important;
+  }
+}
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: @blue-5;
+}
+
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+  border-right: none;
+}
+
+.ant-menu-submenu-popup {
+  .ant-menu-item.ant-menu-item-selected {
+    border-right: 3px solid @blue-1;
+
+    a {
+      font-weight: normal;
+    }
+  }
+
+  .ant-menu-vertical.ant-menu-sub {
+    // min-width: 208px;
+  }
+}
+
+.ant-menu-inline .ant-menu-item, .ant-menu-inline .ant-menu-submenu-title  {
+  width: 100%;
+}
+
+.ant-menu-submenu {
+  .ant-menu-submenu-title {
+    .anticon {
+      display: inline-block;
+    }
+    .anticon.selected {
+      display: none;
+    }
+
+    
+  }
+
+  &.ant-menu-submenu-selected {
+    .ant-menu-submenu-title {
+      color: @blue-1;
+      .anticon {
+        display: none;
+      }
+      .anticon.selected {
+        display: inline-block!important;
+      }
+    }
+  }
+}
+

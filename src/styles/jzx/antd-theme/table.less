@@ -1,0 +1,129 @@
+@import '../colors.less';
+
+// Table
+
+.ant-table-wrapper{
+  .ant-table{
+    color: @gray-1;
+
+    .ant-table-selection {
+      .ant-checkbox-wrapper {
+        padding: 0;
+        line-height: unset;
+      }
+    }
+
+    .ant-table-header {
+      background: @gray-9;
+    }
+    
+    .ant-table-thead{
+      
+      &>tr{
+        &:first-child{
+          border-radius: 0;
+        }
+        &>th{
+          padding: 10px 8px;
+          font-size: 14px;
+          color: @gray-2;
+          font-weight: bold;
+          border:0;
+          // line-height: 20px;
+          background: @gray-9;
+
+          &:first-child{
+            border-radius: 0;
+          }
+          
+        }
+      }
+    }
+    .ant-table-tbody {
+      &>tr{
+        &>td{
+          padding: 11px 8px;
+          border-color: @gray-7;
+        }
+
+        &.ant-table-row-selected td {
+          background-color: transparent;
+        }
+
+        // 行hover样式
+        &.ant-table-row-hover td {
+          background: @gray-9 !important;
+        }
+
+        // 待确定这行是否可以去掉
+        &:hover{
+          &:not(.ant-table-expanded-row){
+            &>td{
+              background: @gray-9;
+            }
+          }
+        }
+      }
+    }
+
+    .ant-table-selection-col {
+      width: 40px;
+    }
+  }
+  .ant-table-pagination{
+    margin-right: 24px;
+  }
+
+  .ant-table-column-sorter2 {
+    .ant-table-column-sorter-inner-full {
+      margin-top: 0!important;
+    }
+    .anticon {
+      font-family: "iconfont" !important;
+      font-size: 14px!important;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      color: @gray-2;
+      svg {
+        display: none;
+      }
+      
+      &.anticon-caret-up {
+        margin-bottom: -2px!important;
+        &::after {
+          content: "\e6ce";
+        }
+      }
+      &.anticon-caret-down {
+        margin-top: -1px!important;
+        &::after {
+          content: "\e6cb";
+        }
+      }
+    }
+  }
+}
+.page-students{
+  .page-students{
+    .ant-table-wrapper{
+      .ant-table{
+        .ant-table-tbody {
+          &>tr{
+            &>td{
+              padding: 8px 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-table-placeholder{
+  border:0;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // margin-top: 41px; //表头高度
+}

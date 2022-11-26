@@ -1,0 +1,91 @@
+@import '../colors.less';
+
+// tree
+.ant-tree{
+  .ant-tree-title{
+    color: @gray-2;
+  }
+  
+  &>[role="treeitem"]{
+    .ant-tree-title{
+      font-weight: bold;
+      color: @gray-1;
+    }
+    &>[role="group"]{
+      .ant-tree-title{
+        font-weight: normal;
+        color: @gray-2;
+      }
+      .ant-tree-treenode-checkbox-checked{
+        .tree-node-name{
+          color: @blue-1;
+        }
+      }
+
+      .ant-tree-node-selected {
+        .tree-node-name{
+          color: @blue-1;
+        }
+      }
+      
+    }
+  }
+  .ant-tree-checkbox-disabled{
+    display: none;
+  }
+  .ant-checkbox-wrapper {
+    padding: 0;
+  }
+  .ant-tree-checkbox {
+    .ant-tree-checkbox-inner {
+      border: 2px solid @gray-6;
+      border-radius: 4px;
+
+      &::after {
+        left: 20%;
+      }
+    }
+    
+    &.ant-tree-checkbox-checked {
+      &::after {
+        border-radius: 4px;
+      }
+      .ant-tree-checkbox-inner {
+        border: 2px solid @blue-1;
+      }
+    }
+
+    &.ant-tree-checkbox-indeterminate {
+      .ant-tree-checkbox-inner {
+        border-color: @blue-1;
+        background-color: @blue-1;
+
+        &::after {
+          height: 2px;
+          background-color: @gray-10;
+          left: 50%;
+        }
+      }
+    }
+  }
+  
+  .ant-tree-checkbox-disabled + span.ant-tree-node-content-wrapper {
+    padding-left: 0;
+  }
+
+  li span.ant-tree-node-content-wrapper {
+    &:hover {
+      background: none;
+    }
+    &.ant-tree-node-selected {
+      background: none;
+    }
+  }
+
+  li span.ant-tree-iconEle {
+    width: 16px;
+    margin: 0 12px 0 2px;
+  }
+
+  
+}

@@ -1,0 +1,72 @@
+@import '../colors.less';
+
+.ant-tooltip{
+  max-width: 338px;
+
+  .ant-tooltip-content{
+    max-height: 420px;
+    overflow-y: auto;
+  }
+
+  .ant-tooltip-inner{
+    padding: 8px 12px;
+    line-height: 22px;
+    background-color: @gray-1;
+    border-radius: 4px;
+    max-height: 420px;
+  }
+
+  .ant-tooltip-arrow{
+    width: 16px;
+    height: 16px;
+    &:before{
+      width: 16px;
+      height: 16px;
+      background-color: @gray-1;
+      box-shadow: none;
+    }
+  }
+
+  &.ant-tooltip-placement-top{
+    .ant-tooltip-arrow{
+      &:before{
+        transform: translateY(-8px) rotate(45deg);
+      }
+    }
+  }
+  &.ant-tooltip-placement-left{
+    .ant-tooltip-arrow{
+      &:before{
+        transform: translateX(-8px) rotate(45deg);
+      }
+    }
+  }
+  &.ant-tooltip-placement-right{
+    .ant-tooltip-arrow{
+      &:before{
+        transform: translateX(8px) rotate(45deg);
+      }
+    }
+  }
+  &.ant-tooltip-placement-bottom{
+    .ant-tooltip-arrow{
+      &:before{
+        transform: translateY(8px) rotate(45deg);
+      }
+    }
+  }
+  &.ant-tooltip-placement-rightTop{
+    .ant-tooltip-arrow{
+      &:before{
+        transform: translateX(8px) rotate(45deg);
+      }
+    }
+  }
+  &.ant-tooltip-placement-rightBottom{
+    .ant-tooltip-arrow{
+      &:before{
+        transform: translateX(8px) rotate(45deg);
+      }
+    }
+  }
+}

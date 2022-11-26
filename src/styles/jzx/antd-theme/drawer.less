@@ -1,0 +1,42 @@
+@import '../colors.less';
+.ant-drawer{
+  .ant-drawer-title{
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: @gray-2;
+  }
+  .ant-drawer-content{
+    overflow: hidden;
+
+    .ant-drawer-wrapper-body{
+      overflow: hidden;
+    }
+
+    .ant-drawer-body{
+      overflow: auto;
+      height: calc(100% - 55px);
+    }
+  }
+  .ant-drawer-mask {
+    background: rgba(48, 56, 88, 0.2);
+  }
+
+  .ant-drawer-close {
+    .anticon-close {
+      font-family: "iconfont" !important;
+      font-size: 20px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      vertical-align: unset;
+      line-height: unset;
+
+      svg {
+        display: none;
+      }
+
+      &::after {
+        content: "\e75f";
+      }
+    }
+  }
+}

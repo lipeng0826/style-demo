@@ -1,0 +1,63 @@
+@import '../colors.less';
+
+// select
+.ant-steps-item-process{
+  &>.ant-steps-item-container{
+    &>.ant-steps-item-content{
+      &>.ant-steps-item-title{
+        color: @gray-1;
+      }
+    }
+  }
+}
+.ant-steps-item-wait{
+  &>.ant-steps-item-container{
+    &>.ant-steps-item-content {
+      &>.ant-steps-item-title{
+        color: @gray-4;
+      }
+    }
+  }
+}
+
+.ant-steps-item-wait{
+  .ant-steps-item-icon {
+    border-color: @gray-4;
+    &>.ant-steps-icon{
+      color: @gray-4;
+    }
+  }
+}
+
+.ant-tabs-nav{
+  .ant-tabs-tab{
+    color: @gray-3;
+    font-weight: normal;
+  }
+  .ant-tabs-tab-active{
+    color: @gray-2;
+  }
+}
+.ant-steps-item{
+  flex: auto;
+}
+.ant-steps-small .ant-steps-item-icon{
+  font-size: 14px;
+}
+.ant-steps-item-title::after{
+  // width: 50px;
+}
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title::after{
+  background-color: @gray-7;
+}
+.ant-steps-item-finish > .ant-steps-item-container > .ant-steps-item-content > .ant-steps-item-title{
+  color: @gray-1;
+}
+.ant-steps-item-process .ant-steps-item-title{
+  font-weight: normal;
+}
+.ant-tabs-ink-bar{
+  left: 15%;
+  width: 32px!important;
+  background-color: @blue-1;
+}

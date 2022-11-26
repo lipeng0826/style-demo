@@ -1,0 +1,57 @@
+@import '../colors.less';
+
+@popover-color: @gray-2;
+
+.ant-popover-inner {
+  border-radius: 8px;
+}
+
+.ant-popover.no-arrow {
+  .ant-popover-arrow {
+    display: none;
+  }
+} 
+
+.ant-popover.no-padding {
+  .ant-popover-inner-content {
+    padding: 0;
+  }
+}
+
+.ant-popover.one-btn {
+  .ant-btn {
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
+
+.ant-popover-message {
+  .anticon.anticon-exclamation-circle {
+    display: none;
+  }
+  .ant-popover-message-title {
+    padding: 0;
+  }
+}
+
+.ant-popover-buttons {
+  .ant-btn {
+    background-color: transparent;
+    border-color: transparent;
+    &:first-child {
+      color: #98A2B2;
+    }
+    &:last-child {
+      color: #3262FD;
+    }
+  }
+}
+
+
+// .ant-popover-placement-bottom,
+// .ant-popover-placement-bottomRight,
+// .ant-popover-placement-bottomLeft {
+//   padding-top: 0!important;
+// }

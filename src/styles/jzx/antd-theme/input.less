@@ -1,0 +1,62 @@
+@import '../colors.less';
+
+// Input
+// @input-height-lg: 64px;
+@input-border-color: @gray-7;
+@input-placeholder-color: @gray-4;
+
+.ant-input {
+  padding: 4px 12px;
+  color: @gray-2;
+
+  &:hover {
+    border-color: @blue-1;
+  }
+
+  &:focus {
+    border-color: @blue-1;
+    box-shadow: 0px 0px 0px 3px rgba(50, 93, 253, 0.2);
+  }
+
+  &[disabled] {
+    background-color: @gray-8;
+    color: @gray-5;
+  }
+}
+
+textarea.ant-input {
+  border-radius: 12px;
+}
+
+.ant-input-search {
+  .iconfont.icon-search {
+    color: @gray-6;
+  }
+
+  .anticon-search {
+    color: @gray-5;
+  }
+
+  .ant-input-suffix {
+    i.anticon-search {
+      font-family: "iconfont" !important;
+      font-size: 16px;
+      font-style: normal;
+      -webkit-font-smoothing: antialiased;
+      color: @gray-5;
+
+      svg {
+        display: none;
+      }
+
+      &::after {
+        content: "\e73a";
+      }
+    }
+
+  }
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+  border-color: @blue-1;
+}

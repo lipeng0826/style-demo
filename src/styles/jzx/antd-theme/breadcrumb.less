@@ -1,0 +1,27 @@
+@import '../colors.less';
+
+.ant-breadcrumb {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  line-height: 22px;
+  padding: 12px 20px;
+  color: @gray-3;
+  font-size: 12px;
+  flex: 0 0 auto;
+
+  a {
+    color: @gray-3;
+    &:hover {
+      color: @gray-3;
+    }
+  }
+
+  & > span:last-child {
+    color: @gray-1;
+  }
+
+  .ant-breadcrumb-separator {
+    margin: 0 4px;
+  }
+}

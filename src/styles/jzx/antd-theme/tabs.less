@@ -1,0 +1,81 @@
+@import '../colors.less';
+
+/*
+  tabs type = card
+*/
+.ant-tabs-card:not(.ant-tabs-editable-card){
+  .ant-tabs-bar{
+    border-bottom: 0;
+  }
+  .ant-tabs-bar{
+    background: @gray-7;
+    border: 2px solid @gray-7;
+    border-radius: 6px;
+    margin:0;
+
+    &.ant-tabs-card-bar{
+      .ant-tabs-nav-container{
+        margin: 0;
+        height: 28px;
+      }
+
+      .ant-tabs-tab{
+        color: @gray-3;
+        margin: 0;
+        width: 91px;
+        padding: 0 16px;
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        background: transparent;
+        border:0;
+        border-radius:0;
+        
+        &.ant-tabs-tab-active{
+          background: @gray-10;
+          color: @blue-1;
+          font-weight: bold;
+          height: 28px;
+  
+          &:first-child{
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+          }
+          &:last-child{
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+          }
+        }
+      }
+      .ant-tabs-ink-bar{
+        background: none;
+      }
+    }
+  }
+}
+
+/*
+  tabs type = line
+*/
+.ant-tabs-line:not(.ant-tabs-editable-card){
+  height: 40px;
+  padding-left: 28px;
+  .ant-tabs-bar{
+    border-bottom: 0;
+  }
+  .ant-tabs-tab {
+    padding: 8px 12px 10px 12px;
+    line-height: 22px;
+    color: @gray-3;
+
+    &:hover {
+      color: @gray-2;
+    }
+  }
+  .ant-tabs-bar {
+    margin: 0;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    margin: 0;
+  }
+}

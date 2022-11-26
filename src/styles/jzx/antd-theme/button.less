@@ -1,0 +1,219 @@
+@import '../colors.less';
+
+// Buttons
+@btn-height-lg: 40px;
+.ant-btn {
+  border-color: @gray-7;
+  background-color: @gray-10;
+  color: @gray-2;
+  padding: 0 20px;
+  box-shadow: none!important;
+ 
+  &:hover {
+    border-color: @blue-1;
+    color: @blue-1;
+    background-color: @gray-10;
+  }
+  &:active,
+  &:focus {
+    border-color: @blue-0;
+    color: @blue-0;
+    background-color: @gray-10;
+  }
+  &[disabled] {
+    background-color: @gray-8;
+    border-color: @gray-7;
+    color: @gray-5;
+
+    &:hover {
+      background-color: @gray-8;
+      border-color: @gray-7;
+    }
+  }
+}
+.ant-btn-primary {
+  border-color: @blue-1;
+  background-color: @blue-1;
+  color: @gray-10;
+  &:hover {
+    background-color: @blue-2;
+    border-color: @blue-2;
+    color: @gray-10
+  }
+  &:active,
+  &:focus {
+    background-color: @blue-0;
+    border-color: @blue-0;
+    color: @gray-10;
+  }
+  &[disabled] {
+    background-color: @gray-8;
+    border-color: @gray-8;
+    color: @gray-5;
+  }
+}
+.ant-btn-dashed {
+  border-style: solid;
+  border-color: @blue-1;
+  background-color: @gray-10;
+  color: @blue-1;
+
+  &:hover {
+    background-color: @gray-9;
+  }
+  &:active,
+  &:focus {
+    background-color: @blue-3;
+  }
+}
+.ant-btn-link {
+  background-color: transparent;
+  border-color: transparent;
+  color: @blue-1;
+  padding: 0 12px;
+
+  &:hover {
+    background-color: @gray-9;
+    border-color: @gray-9;
+  }
+  &:active,
+  &:focus {
+    background-color: @gray-8;
+    border-color: @gray-8;
+  }
+
+  &.ant-btn-sm {
+    padding: 0 8px;
+  }
+
+  &[disabled] {
+    background-color: transparent;
+    border-color: transparent;
+    color: @gray-5;
+  }
+
+  &.link {
+    padding: 0;
+    margin-right: 20px;
+    color: @blue-1;
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: @blue-2;
+    }
+    &:active,
+    &:focus {
+      background-color: transparent;
+      border-color: transparent;
+      color: @blue-0;
+    }
+  }
+}
+.ant-btn-secondary{
+  border-color: @blue-1;
+  background-color: @gray-10;
+  color: @blue-1;
+ 
+  &:hover {
+    border-color: @blue-1;
+    color: @blue-1;
+    background-color: @gray-9;
+  }
+  &:active,
+  &:focus {
+    border-color: @blue-1;
+    color: @blue-1;
+    background-color: @blue-3;
+  }
+  &[disabled] {
+    background-color: @gray-8;
+    border-color: @gray-7;
+    color: @gray-5;
+  }
+}
+.ant-btn-danger{
+  border-color: @red-0;
+  background-color: @red-0;
+  color: @gray-10;
+ 
+  &:hover {
+    border-color: @red-3;
+    color: @gray-10;
+    background-color: @red-3;
+  }
+  &:active,
+  &:focus {
+    border-color: @red-4;
+    color: @gray-10;
+    background-color: @red-4;
+  }
+  &[disabled] {
+    background-color: @gray-8;
+    border-color: @gray-8;
+    color: @gray-5;
+  }
+}
+.ant-btn-t-link{
+  border-color: transparent;
+  background-color: transparent;
+  color: @blue-1;
+  padding:0;
+  outline:none;
+ 
+  &:hover {
+    border-color: transparent;
+    color: @blue-2;
+    background-color: transparent;
+    outline:none;
+  }
+  &:active,
+  &:focus {
+    border-color: transparent;
+    color: @blue-0;
+    background-color: transparent;
+    outline:none;
+  }
+  &[disabled] {
+    background-color: transparent;
+    border-color: transparent;
+    color: @gray-5;
+
+    &:hover{
+      background-color: transparent;
+      border-color: transparent;
+      color: @gray-5;
+    }
+  }
+  &:after{
+    display: none;
+  }
+}
+
+.ant-btn-lg {
+  padding: 0 24px;
+}
+
+.ant-btn-danger {
+  background-color: @red-0;
+  border-color: @red-0;
+  color: @gray-10;
+
+  &:hover {
+    background-color: @red-3;
+    border-color: @red-3;
+    color: @gray-10;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @red-4;
+    border-color: @red-4;
+    color: @gray-10;
+  }
+  &[disabled] {
+    background-color: @gray-8;
+    border-color: @gray-7;
+    color: @gray-5;
+  }
+}
