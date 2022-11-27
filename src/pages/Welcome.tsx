@@ -1,12 +1,10 @@
 import React from 'react';
-import './Welcome.less'
+import './Welcome.less';
 import { Link } from 'umi';
 
-
 const Welcome: React.FC = () => {
-
   return (
-    <div className='description'>
+    <div className="description">
       <div>样式展示概览：</div>
       <div>
         <div>布局相关</div>
@@ -37,6 +35,12 @@ const Welcome: React.FC = () => {
         <div>小样式</div>
         <div>
           <Link to="/small-style/index">入口</Link>
+        </div>
+      </div>
+      <div>
+        <div>css样式学习</div>
+        <div>
+          <Link to="/css3/index">css入口</Link>
         </div>
       </div>
     </div>

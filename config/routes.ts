@@ -47,8 +47,9 @@
         name: 'mul-columns-dot',
         component: './element/mul-columns-dot/index.jsx',
       },
-    ]
+    ],
   },
+  // antd
   {
     path: '/antd',
     name: 'antd',
@@ -59,8 +60,8 @@
         path: '/antd/message',
         name: 'message',
         component: './antd/message/index.jsx',
-      }
-    ]
+      },
+    ],
   },
   // 小样式
   {
@@ -74,7 +75,21 @@
         name: 'small-style',
         component: './smallStyle/index.jsx',
       },
-    ]
+    ],
+  },
+  // css3
+  {
+    path: '/css3',
+    name: 'css3',
+    layout: false,
+    hideInMenu: true,
+    routes: [
+      {
+        path: '/css3/index',
+        name: 'index',
+        component: './css3/index.jsx',
+      },
+    ],
   },
   {
     component: './404',
