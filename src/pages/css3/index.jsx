@@ -8,6 +8,7 @@ import Juzhong from './juzhong';
 import Canvas from './canvas';
 import DesignAlert from './designAlert';
 import Drop from './drop';
+import Flex from './flex';
 
 const Css3 = (props) => {
   const [tabValue, setTabValue] = useState('weiyuansu');
@@ -23,6 +24,7 @@ const Css3 = (props) => {
           <Tabs.TabPane tab="Canvas" key="Canvas" />
           <Tabs.TabPane tab="DesignAlert" key="DesignAlert" />
           <Tabs.TabPane tab="Drop" key="Drop" />
+          <Tabs.TabPane tab="Flex" key="Flex" />
         </Tabs>
       </div>
       <div>
@@ -33,6 +35,7 @@ const Css3 = (props) => {
         {tabValue === 'Canvas' && <Canvas />}
         {tabValue === 'DesignAlert' && <DesignAlert />}
         {tabValue === 'Drop' && <Drop />}
+        {tabValue === 'Flex' && <Flex />}
       </div>
     </div>
   );
