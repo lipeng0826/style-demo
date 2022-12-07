@@ -57,9 +57,19 @@
     hideInMenu: true,
     routes: [
       {
+        path: '/antd/index',
+        name: 'index',
+        component: './antd/index.jsx',
+      },
+      {
         path: '/antd/message',
         name: 'message',
         component: './antd/message/index.jsx',
+      },
+      {
+        path: '/antd/tree',
+        name: 'message',
+        component: './antd/tree/index.jsx',
       },
     ],
   },
