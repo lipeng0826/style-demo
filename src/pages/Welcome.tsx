@@ -8,6 +8,9 @@ const Welcome: React.FC = () => {
       <div className="title">样式展示概览：</div>
       <div className="title">布局相关</div>
       <div>
+        <Link to="/layout/input-layout">输入布局</Link>
+      </div>
+      <div>
         <Link to="/layout/pageLevel/top-middle-bottom">上中下布局</Link>
       </div>
       <div>

@@ -14,6 +14,11 @@
     hideInMenu: true,
     routes: [
       {
+        name: 'input-layout',
+        path: '/layout/input-layout',
+        component: './layout/input-layout/index.jsx',
+      },
+      {
         name: 'top-middle-bottom',
         path: '/layout/pageLevel/top-middle-bottom',
         component: './layout/pageLevel/top-middle-bottom.jsx',
@@ -60,6 +65,11 @@
         path: '/antd/index',
         name: 'index',
         component: './antd/index.jsx',
+      },
+      {
+        path: '/antd/input',
+        name: 'input',
+        component: './antd/message/index.jsx',
       },
       {
         path: '/antd/message',
