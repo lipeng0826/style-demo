@@ -11,6 +11,7 @@ import Drop from './drop';
 import Flex from './flex';
 import Icon from './icon';
 import HuanDengPian from './huan-deng-pic';
+import MP from './m-p';
 
 const Css3 = (props) => {
   const [tabValue, setTabValue] = useState('weiyuansu');
@@ -29,6 +30,7 @@ const Css3 = (props) => {
           <Tabs.TabPane tab="Flex" key="Flex" />
           <Tabs.TabPane tab="css图标" key="icon" />
           <Tabs.TabPane tab="幻灯片" key="HuanDengPian" />
+          <Tabs.TabPane tab="M-P" key="M-P" />
         </Tabs>
       </div>
       <div>
@@ -42,6 +44,7 @@ const Css3 = (props) => {
         {tabValue === 'Flex' && <Flex />}
         {tabValue === 'icon' && <Icon />}
         {tabValue === 'HuanDengPian' && <HuanDengPian />}
+        {tabValue === 'M-P' && <MP />}
       </div>
     </div>
   );
