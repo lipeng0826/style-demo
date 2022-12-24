@@ -2,6 +2,13 @@ import React, { useState } from 'react';
 import { Input, Tooltip } from 'antd';
 import './index.less';
 
+/**
+ * 使用普通的input实现inputSearch
+ *  1.增加1个搜索的按钮样式&监听点击事件
+ *  2.监听回车事件
+ *  3.监听事件，获取state中的值，通知父组件
+ */
+
 const InputComp = (props) => {
   const [searchValue, setSearchValue] = useState('');
 

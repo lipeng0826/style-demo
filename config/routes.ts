@@ -69,7 +69,7 @@
       {
         path: '/antd/input',
         name: 'input',
-        component: './antd/message/index.jsx',
+        component: './antd/input/index.jsx',
       },
       {
         path: '/antd/message',

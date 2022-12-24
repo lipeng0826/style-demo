@@ -8,6 +8,9 @@ const InteractItem = (props) => {
         <Link to="/antd/message">覆盖message样式(scroll-bar)</Link>
       </div>
       <div>
+        <Link to="/antd/input">input</Link>
+      </div>
+      <div>
         <Link to="/antd/tree">tree</Link>
       </div>
     </div>
