@@ -1,10 +1,66 @@
 @import '../../../styles/common.less';
 
+// 不一定要加这个样式
 #input-layout-container {
   display: flex;
 }
 
 #input-layout {
+  // 1.如果很宽
+  // ​	那么左侧的按钮按照大小分布
+  // 2.如果左侧很窄
+  // ​	内容换行，同时按照宽度均匀分布
+  // 3.搜索按钮放在右边
+
+  // 媒体查询：
+  // ​	由于左侧有个开关框，没提查询的样式可能不准确
+  // ​	当内容大于1521
+  // max-width: 1045px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 0 8px;
+
+  // 让每个元素都可以等比放大，但是是有范围的放大，可以兼容按钮下去的空间
+  // 让btn的flex为1，可以到右边
+
+  > * {
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+
+  > input,
+  .ant-select {
+    max-width: 120px;
+  }
+
+  > .ant-picker {
+    flex: 1;
+    min-width: 240px;
+    max-width: 330px;
+  }
+
+  .search-button {
+    display: inline-block;
+    flex: 1;
+    text-align: right;
+  }
+
+  // 在屏幕宽度大于1045的时候，需要让它靠左，因为它是左对齐的
+
+  // @media screen and (min-width: 1045px) {
+  //   .search-button {
+  //     text-align: left;
+  //   }
+  // }
+}
+
+// 第二种情况
+
+#input-layout-container2 {
+  display: flex;
+}
+
+#input-layout2 {
   // 1.如果很宽
   // ​	那么左侧的按钮按照大小分布
   // 2.如果左侧很窄

@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import './index.less';
-const Juzhong = (props) => {
+
+export const Circle = () => {
   return (
-    <div id="icon">
+    <div>
+      <h1>圆点</h1>
       <div>
-        <h1>圆点</h1>
-        <div>
-          <span className="circle">未发布</span>
-        </div>
+        <span className="circle">未发布</span>
       </div>
     </div>
   );
 };
 
-export default Juzhong;
+const Icon = (props) => {
+  return (
+    <div id="icon">
+      <Circle />
+    </div>
+  );
+};
+
+export default Icon;

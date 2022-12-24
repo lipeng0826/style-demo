@@ -37,6 +37,30 @@ const InteractTemplate = () => {
           </div>
         </div>
       </div>
+      <div>
+        <span>第二种情况：如果所有的内容是固定宽度的</span>
+      </div>
+      <div id="input-layout-container2">
+        <div id="input-layout2">
+          <Input style={{ width: 120 }} placeholder="互动id" />
+          <Input style={{ width: 120 }} placeholder="互动名称" />
+          <Input style={{ width: 120 }} placeholder="创建人邮箱" />
+          <Input style={{ width: 120 }} placeholder="日期" />
+          <Select
+            style={{
+              width: 120,
+            }}
+          />
+          <Select
+            style={{
+              width: 120,
+            }}
+          />
+          <div className="search-button">
+            <Button type="primary">搜索</Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
