@@ -72,6 +72,11 @@
         component: './antd/input/index.jsx',
       },
       {
+        path: '/antd/button',
+        name: 'button',
+        component: './antd/button/index.jsx',
+      },
+      {
         path: '/antd/message',
         name: 'message',
         component: './antd/message/index.jsx',
