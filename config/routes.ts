@@ -28,6 +28,11 @@
         name: 'multiple-column-center',
         component: './layout/mulitple-column-center/index.tsx',
       },
+      {
+        path: '/layout/open-close',
+        name: 'open-close',
+        component: './layout/open-close/index.jsx',
+      },
     ],
   },
   // 元素

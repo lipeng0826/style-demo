@@ -16,6 +16,9 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/layout/multiple-column-center">多列布局（mulitple-column-center）</Link>
       </div>
+      <div>
+        <Link to="/layout/open-close">开关样式（open-close）</Link>
+      </div>
       <div className="title">组件相关</div>
       <div>
         <Link to="/element/scroll">滚动条样式(scroll-bar)</Link>
