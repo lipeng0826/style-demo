@@ -1,5 +1,14 @@
 # STYLE-DEMO
 
+## git 地址
+
+    https://github.com/lipeng0826/style-demo
+
+## 安装
+
+    sudo cnpm i
+    node启动版本： 14.17.0 （其他版本不知道）
+
 ## css 布局
 
     先搞html的布局，再考虑样式
