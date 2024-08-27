@@ -16,3 +16,11 @@
 ## 数量有限的总结和复盘，是大量复杂实践和提升的必经之路
 
 ## 封装代码：自然会丧失一些定制化特性，提高一些复用性
+
+## https 启动报错
+
+在命令中增加了`NODE_OPTIONS=--openssl-legacy-provider`
+
+    ```shell
+    "start": "cross-env UMI_ENV=dev NODE_OPTIONS=--openssl-legacy-provider umi dev",
+    ```

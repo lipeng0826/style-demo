@@ -7,18 +7,17 @@ import defaultSettings from './defaultSettings';
 import proxy from './proxy';
 import routes from './routes';
 
-const { REACT_APP_ENV, https } = process.env;
-console.log('https: ', https);
+const { REACT_APP_ENV } = process.env;
 
 export default defineConfig({
   devServer: {
-    https:
-      https === '1'
-        ? {
-            key: path.resolve(__dirname, '../https/test.test.com+3-key.pem'),
-            cert: path.resolve(__dirname, '../https/test.test.com+3.pem'),
-          }
-        : undefined,
+    // https:
+    //   https === '1'
+    //     ? {
+    //         key: path.resolve(__dirname, '../https/test.test.com+3-key.pem'),
+    //         cert: path.resolve(__dirname, '../https/test.test.com+3.pem'),
+    //       }
+    //     : undefined,
   },
   hash: true,
   outputPath: 'prod',
