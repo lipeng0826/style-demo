@@ -14,6 +14,11 @@
     hideInMenu: true,
     routes: [
       {
+        name: 'input-flex',
+        path: '/layout/flex',
+        component: './layout/flex/index.jsx',
+      },
+      {
         name: 'input-layout',
         path: '/layout/input-layout',
         component: './layout/input-layout/index.jsx',

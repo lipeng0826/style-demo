@@ -125,8 +125,10 @@ const Flex = (props) => {
           {CssCode(`.item {
   flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }`)}
-          flex:1 表示： flex: 1, 1, 0%; 6.align-self flex属性是`flex-grow`, `flex-shrink` 和
-          `flex-basis`的简写，默认值为0 1 auto。后两个属性可选。
+          flex:1 表示： flex: 1, 1, 0%; <br />
+          <br />
+          6.align-self flex属性是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为0 1
+          auto。后两个属性可选。
           {CssCode(`.item {
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }`)}
