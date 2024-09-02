@@ -1,0 +1,35 @@
+#flex {
+  .desc-flex {
+    height: 200px;
+    overflow: auto;
+  }
+  .alignContentDemo {
+    display: flex;
+    flex-wrap: wrap; /* 允许内容换行 */
+    align-content: center;
+    height: 300px; /* 容器的高度 */
+    background: lightcyan;
+  }
+
+  .item {
+    flex: 1 1 100px; /* 子项的大小 */
+    height: 50px;
+    margin: 5px;
+    background-color: lightblue;
+  }
+  .flex-1-demo {
+    display: flex;
+    .left {
+      width: 200px;
+      background: lightblue;
+    }
+    .center {
+      flex: 1;
+      background: lightcoral;
+    }
+    .right {
+      width: 200px;
+      background: lightcyan;
+    }
+  }
+}
