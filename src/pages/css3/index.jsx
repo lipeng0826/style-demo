@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Tabs } from 'antd';
 import './index.less';
 import WeiYuanSu from './weiyuansu';
@@ -13,14 +13,32 @@ import Flex from './flex';
 import Icon from './icon';
 import HuanDengPian from './huan-deng-pic';
 import MP from './m-p';
+import OnePX from './onePX';
 import Other from './other';
 
+const key = 'style-demo-css3-tabValue';
+
 const Css3 = (props) => {
-  const [tabValue, setTabValue] = useState('weiyuansu');
+  const [tabValue, setTabValue] = useState(undefined);
+
+  useEffect(() => {
+    const current = localStorage.getItem(key);
+
+    if (current) {
+      console.log('lipeng-🚀- ~ useEffect ~ current:', current);
+      setTabValue(current);
+    }
+  }, []);
+
+  const updateTabValue = (value) => {
+    localStorage.setItem(key, '' + value);
+    setTabValue(value);
+  };
 
   // 将组件和标签页信息放入数组
   const tabComponents = [
     { key: 'weiyuansu', component: <WeiYuanSu />, tab: '伪元素' },
+    { key: 'OnePX', component: <OnePX />, tab: '1px' },
     { key: 'transition', component: <Transition />, tab: 'Transition' },
     { key: 'Mask', component: <Mask />, tab: 'mask' },
     { key: 'Juzhong', component: <Juzhong />, tab: '居中' },
@@ -38,7 +56,7 @@ const Css3 = (props) => {
   return (
     <div>
       <div>
-        <Tabs value={tabValue} onChange={setTabValue}>
+        <Tabs activeKey={tabValue} onChange={updateTabValue}>
           {/* 渲染标签页 */}
           {tabComponents.map((item) => (
             <Tabs.TabPane key={item.key} tab={item.tab} />

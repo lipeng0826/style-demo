@@ -26,4 +26,8 @@ const HighLight = ({ code, language = 'css' }: { code: string; language: string 
   );
 };
 
+HighLight.cssCode = (str: string) => {
+  return <HighLight code={str} language="css" />;
+};
+
 export default HighLight;

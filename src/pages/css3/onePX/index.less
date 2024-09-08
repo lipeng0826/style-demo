@@ -1,0 +1,23 @@
+#onePX {
+  margin-left: 30px;
+  .a {
+    position: relative;
+    box-sizing: border-box;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 200%;
+      height: 200%;
+      border: 1px solid black;
+      transform: translate(-50%, -50%) scale(0.5, 0.5);
+      content: '';
+    }
+  }
+  .b {
+    width: 200px;
+    height: 200px;
+    background: red;
+  }
+}

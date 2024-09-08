@@ -7,3 +7,5 @@
     ```shell
     "start": "cross-env UMI_ENV=dev NODE_OPTIONS=--openssl-legacy-provider umi dev",
     ```
+
+    当前的node版本：20.14.0
