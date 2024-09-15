@@ -44,6 +44,10 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/css3/index">css入口</Link>
       </div>
+      <div className="title">tools</div>
+      <div>
+        <Link to="/tools/wheel">大转盘</Link>
+      </div>
     </div>
   );
 };
