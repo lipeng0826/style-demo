@@ -10,7 +10,7 @@ import Svg from './svg';
 import Drop from './drop';
 import Grid from './grid';
 import Flex from './flex';
-import Icon from './icon';
+import Icon from './Icon';
 import HuanDengPian from './huan-deng-pic';
 import MP from './m-p';
 import OnePX from './onePX';
