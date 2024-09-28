@@ -5,7 +5,7 @@ import './_router.less';
 export default function Layout() {
   return (
     <div>
-      <Draggable>
+      {/* <Draggable>
         <div className="list-touchbar">
           <ul>
             <div className="description">
@@ -50,12 +50,13 @@ export default function Layout() {
               </div>
               <div className="title">tools</div>
               <div>
-                <Link to="/tools/wheel">大转盘</Link>
+                <div><Link to="/tools/wheel">大转盘</Link></div>
+                <div><Link to="/tools/editContent">可编辑div</Link></div>
               </div>
             </div>
           </ul>
         </div>
-      </Draggable>
+      </Draggable> */}
 
       <Outlet />
     </div>

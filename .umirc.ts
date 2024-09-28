@@ -67,6 +67,10 @@ export default defineConfig({
       component: './tools/大转盘/index.jsx',
     },
     {
+      path: '/tools/editContent',
+      component: './tools/editContent/index.jsx',
+    },
+    {
       path: '*',
       component: './404',
     },
