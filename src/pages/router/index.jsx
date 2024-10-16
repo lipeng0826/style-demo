@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Welcome from '../Welcome';
+import Welcome from '../layouts/Welcome.tsx';
 import FlexLayout from '../layout/flex/index.jsx';
 import InputLayout from '../layout/input-layout/index.jsx';
 import TopMiddleBottom from '../layout/pageLevel/top-middle-bottom/index.jsx';

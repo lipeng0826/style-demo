@@ -32,6 +32,9 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/element/mul-columns-dot">多列省略布局</Link>
       </div>
+      <div>
+        <Link to="/element/float-top">固定顶部浮动</Link>
+      </div>
       <div className="title">antd相关</div>
       <div>
         <Link to="/antd/index">antd 相关页面</Link>
