@@ -3,6 +3,10 @@ import { defineConfig } from "umi";
 export default defineConfig({
   routes: [
     {
+      path: '/',
+      component: './layouts/Welcome.tsx',
+    },
+    {
       path: '/layout/flex',
       component: './layout/flex/index.jsx',
     },
@@ -33,6 +37,10 @@ export default defineConfig({
     {
       path: '/element/mul-columns-dot',
       component: './element/mul-columns-dot/index.jsx',
+    },
+    {
+      path: '/element/float-top',
+      component: './element/float-top/index.jsx',
     },
     {
       path: '/antd/index',
