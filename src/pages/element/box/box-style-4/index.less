@@ -1,0 +1,85 @@
+@import "../../../../styles/common.less";
+/* 最外层框的样式 */
+.item-container {
+  position: relative;
+  width: 150px;
+  height: 88px;
+  background: #ffffff;
+  border: 1px solid #DEDEEA;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  margin-right: 12px;
+
+  &.active {
+    border: 1px solid #165dff;
+  }
+
+  &.empty {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .operate {
+    position: absolute;
+    display: none;
+    right: 8px;
+    top: 8px;
+    svg {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    .operate {
+      display: block;
+    }
+  }
+
+  > .top {
+    display: flex;
+    margin-bottom: 4px;
+    /* "场景"小按钮的样式 */
+    > .tag-scenario {
+      padding: 0 4px;
+      height: 15px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 15px;
+      color: #575766;
+      background: #F2F3F7; /* 没有背景色的话 */
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+
+    /* "参考强度80"按钮的样式 */
+   > .tag-reference {
+      padding: 0 4px;
+      height: 16px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 15px;
+      background: #F3F7FF;
+      border-radius: 4px;
+      color: #165DFF;
+      text-align: center;
+    }
+  }
+
+  /* name部分的样式 */
+  .item-name {
+    width: 118px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292933;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    .mul-ellipsis(2)
+  }
+}

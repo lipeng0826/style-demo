@@ -3,12 +3,13 @@ import { Button, Tabs } from 'antd';
 import Box1 from './box-style-1/index'
 import Box2 from './box-style-2/index'
 import Box3 from './box-style-3/index'
+import Box4 from './box-style-4/index'
 import './index.less';
 
 const InteractItem = (props) => {
   return (
     <div>
-      <Tabs defaultActiveKey="1">
+      <Tabs defaultActiveKey="4">
         <Tabs.TabPane tab="盒子1" key="1">
           <Box1 />
         </Tabs.TabPane>
@@ -17,6 +18,9 @@ const InteractItem = (props) => {
         </Tabs.TabPane>
         <Tabs.TabPane tab="盒子3" key="3">
           <Box3 />
+        </Tabs.TabPane>
+        <Tabs.TabPane tab="盒子4" key="4">
+          <Box4 />
         </Tabs.TabPane>
       </Tabs>
     </div>
