@@ -1,0 +1,26 @@
+.element-float-top {
+  display: flex;
+  flex-direction: column;
+  // 样式的容器
+  .container {
+    position: relative; /* 容器使用相对定位 */
+    width: 100%; /* 根据需要设置宽度 */
+
+    .floating-content {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #f0f0f0;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      z-index: 1; /* 确保浮动区域不被遮挡 */
+      top: -50px;
+    }
+
+    .custom-textarea {
+      width: 100%;
+    }
+  }
+}

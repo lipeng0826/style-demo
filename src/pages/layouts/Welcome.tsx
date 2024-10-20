@@ -6,6 +6,7 @@ const Welcome: React.FC = () => {
   return (
     <div className="description">
       <div className="title">样式展示概览：</div>
+      {/* 布局相关 */}
       <div className="title">布局相关</div>
       <div>
         <Link to="/layout/flex">flex布局</Link>
@@ -22,6 +23,7 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/layout/open-close">开关样式（open-close）</Link>
       </div>
+      {/* 组件相关 */}
       <div className="title">组件相关</div>
       <div>
         <Link to="/element/scroll">滚动条样式(scroll-bar)</Link>
@@ -35,18 +37,25 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/element/float-top">固定顶部浮动</Link>
       </div>
+      {/* antd相关 */}
       <div className="title">antd相关</div>
       <div>
         <Link to="/antd/index">antd 相关页面</Link>
       </div>
+      {/* small-style */}
       <div className="title">小样式</div>
       <div>
         <Link to="/small-style/index">入口</Link>
       </div>
+      <div>
+        <Link to="/small-style/highlight">文字高亮</Link>
+      </div>
+      {/* css样式学习 */}
       <div className="title">css样式学习</div>
       <div>
         <Link to="/css3/index">css入口</Link>
       </div>
+      {/* tools */}
       <div className="title">tools</div>
       <div>
         <Link to="/tools/wheel">大转盘</Link>
