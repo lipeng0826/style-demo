@@ -33,7 +33,7 @@
     opacity: 0;
     transform: translateY(-5px); /* 初始位置稍微上移 */
     pointer-events: none; // 控制opacity:0; 不触发事件
-    transition: opacity 0.3s ease, transform 0.3s ease; /* 添加过渡效果 */
+    transition: opacity 0.3s ease, transform 0.3s ease 0.1s; /* 离开时有短暂延迟 */
     svg {
       cursor: pointer;
     }
@@ -44,6 +44,8 @@
     .operate {
       opacity: 1;
       transform: translateY(0); /* 恢复到正常位置 */
+      pointer-events: auto;
+      transition-delay: 0s; /* 悬停时立即显示 */
     }
   }
 
