@@ -11,14 +11,19 @@ const InteractItem = (props) => {
   const onClick = () => {
     setChoose(true)
   }
+  
+  const clickOperate = (e) => {
+    e.stopPropagation();
+    console.log('操作');
+  }
 
   return (
     <>
-      <div style={{ display: 'flex'}}>
-        <div className={`item-container  ${choose ? 'active': ''}`} onClick={onClick}>
-          <div className="operate">
-          <span style={{ marginRight: 4 }}><EditOutlined /></span>
-          <span><DeleteOutlined /></span>
+      <div style={{ display: 'flex' }}>
+        <div className={`item-container  ${choose ? 'active' : ''}`} onClick={onClick}>
+          <div className="operate" onClick={clickOperate}>
+            <span style={{ marginRight: 4 }}><EditOutlined /></span>
+            <span><DeleteOutlined /></span>
           </div>
           <div className="top">
             {/* 目前场景字符长度都是2 */}

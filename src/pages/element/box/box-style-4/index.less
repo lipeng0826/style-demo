@@ -13,29 +13,37 @@
   padding: 12px 16px;
   margin-right: 12px;
 
+  // 选中样式
   &.active {
     border: 1px solid #165dff;
   }
 
+  // 增加按钮的样式
   &.empty {
     justify-content: center;
     align-items: center;
     cursor: pointer;
   }
 
+  // 右上角操作按钮的样式
   .operate {
     position: absolute;
-    display: none;
     right: 8px;
     top: 8px;
+    opacity: 0;
+    transform: translateY(-5px); /* 初始位置稍微上移 */
+    pointer-events: none; // 控制opacity:0; 不触发事件
+    transition: opacity 0.3s ease, transform 0.3s ease; /* 添加过渡效果 */
     svg {
       cursor: pointer;
     }
   }
 
+  // hover上去的时候再展示
   &:hover {
     .operate {
-      display: block;
+      opacity: 1;
+      transform: translateY(0); /* 恢复到正常位置 */
     }
   }
 
