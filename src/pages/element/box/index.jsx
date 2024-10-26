@@ -4,7 +4,6 @@ import Box1 from './box-style-1/index'
 import Box2 from './box-style-2/index'
 import Box3 from './box-style-3/index'
 import Box4 from './box-style-4/index'
-import './index.less';
 
 const InteractItem = () => {
   const items = [
