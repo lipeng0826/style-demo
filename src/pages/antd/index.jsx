@@ -13,6 +13,9 @@ const InteractItem = (props) => {
       <div>
         <Link to="/antd/tree">tree</Link>
       </div>
+      <div>
+        <Link to="/antd/select">select</Link>
+      </div>
     </div>
   );
 };

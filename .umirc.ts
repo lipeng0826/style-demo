@@ -59,6 +59,10 @@ export default defineConfig({
       component: './antd/message/index.jsx',
     },
     {
+      path: '/antd/select',
+      component: './antd/select/index.jsx',
+    },
+    {
       path: '/antd/tree',
       component: './antd/tree/index.jsx',
     },

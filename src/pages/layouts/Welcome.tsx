@@ -4,8 +4,7 @@ import { Link } from 'umi';
 
 const Welcome: React.FC = () => {
   return (
-    <div className="description">
-      <div className="title">样式展示概览：</div>
+    <div className="list-touchbar">
       {/* 布局相关 */}
       <div className="title">布局相关</div>
       <div>
