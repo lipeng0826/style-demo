@@ -5,6 +5,11 @@ import { Link } from 'umi';
 const Welcome: React.FC = () => {
   return (
     <div className="list-touchbar">
+      {/* 盒子模型demo */}
+      <div className="title">盒子模型</div>
+      <div>
+        <Link to="/box-model/index">盒子模型</Link>
+      </div>
       {/* 布局相关 */}
       <div className="title">布局相关</div>
       <div>

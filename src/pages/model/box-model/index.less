@@ -1,0 +1,23 @@
+#box-model {
+  display: flex;
+  .container {
+    background: lightcoral;
+    height: 200px;
+    width: 200px;
+    overflow: auto;
+    .inner1 {
+      height: 100%;
+      margin-bottom: 20px;
+    }
+    .inner2 {
+      height: 100%;
+      padding-bottom: 20px;
+      box-sizing: content-box;
+    }
+    .inner3 {
+      height: 100%;
+      padding-bottom: 20px;
+      box-sizing: border-box;
+    }
+  }
+}

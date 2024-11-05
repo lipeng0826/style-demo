@@ -7,6 +7,10 @@ export default defineConfig({
       component: './layouts/Welcome.tsx',
     },
     {
+      path: '/box-model/index',
+      component: './model/box-model/index',
+    },
+    {
       path: '/layout/flex',
       component: './layout/flex/index.jsx',
     },
