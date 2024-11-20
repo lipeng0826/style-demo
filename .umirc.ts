@@ -35,6 +35,10 @@ export default defineConfig({
       component: './element/box/index.jsx',
     },
     {
+      path: '/element/card',
+      component: './element/card/index.jsx',
+    },
+    {
       path: '/element/scroll',
       component: './element/scroll-bar',
     },

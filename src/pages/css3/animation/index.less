@@ -1,0 +1,35 @@
+#animation {
+  /* 方块样式 */
+  .animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    border-radius: 10px;
+    position: relative;
+    animation: moveRotateScale 5s infinite; /* 设置动画 */
+  }
+
+  /* 定义动画 */
+  @keyframes moveRotateScale {
+    0% {
+      transform: translate(0, 0) rotate(0deg) scale(1); /* 初始状态 */
+      background-color: #3498db; /* 初始背景色 */
+    }
+    25% {
+      transform: translate(200px, 0) rotate(90deg) scale(1.5); /* 向右移动并旋转 */
+      background-color: #e74c3c; /* 改变颜色 */
+    }
+    50% {
+      transform: translate(200px, 200px) rotate(180deg) scale(1); /* 向下移动并旋转 */
+      background-color: #2ecc71; /* 改变颜色 */
+    }
+    75% {
+      transform: translate(0, 200px) rotate(270deg) scale(0.5); /* 向左移动并旋转 */
+      background-color: #f39c12; /* 改变颜色 */
+    }
+    100% {
+      transform: translate(0, 0) rotate(360deg) scale(1); /* 返回起始位置 */
+      background-color: #3498db; /* 改变颜色回初始 */
+    }
+  }
+}

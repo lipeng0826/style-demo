@@ -1,0 +1,54 @@
+@import "../../../../styles/common.less";
+
+// 第一种盒子
+.card-item2 {
+  position: relative;
+  height: 150px;
+
+  .icon {
+    position: absolute;
+    top: -14px;
+    right: 20px;
+    color: #f7f8fa;
+  }
+  .modal {
+    position: relative; /* 为伪元素提供定位基准 */
+    display: flex;
+    padding: 16px 20px;
+    background: #f7f8fa;
+    border-radius: 8px;
+    max-height: 150px;
+    overflow: auto;
+
+    .column {
+      flex: 1; /* 两列平分空间 */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item {
+      display: flex;
+      background: #f9f9f9;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .grid-item .label {
+      margin-right: 8px;
+      width: 52px;
+      font-size: 12px;
+      line-height: 18px;
+      color: #878799;
+    }
+
+    .grid-item .value {
+      flex: 1;
+      font-size: 12px;
+      line-height: 18px;
+      color: #575766;
+    }
+  }
+}

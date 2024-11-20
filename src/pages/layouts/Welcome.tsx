@@ -33,7 +33,10 @@ const Welcome: React.FC = () => {
         <Link to="/element/scroll">滚动条样式(scroll-bar)</Link>
       </div>
       <div>
-        <Link to="/element/box">盒子样式(box)</Link>
+        <Link to="/element/box">盒子样式(list的item)</Link>
+      </div>
+      <div>
+        <Link to="/element/card">固定卡片样式(展示一段排版文案的区域)</Link>
       </div>
       <div>
         <Link to="/element/mul-columns-dot">多列省略布局</Link>

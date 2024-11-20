@@ -3,6 +3,7 @@ import { Tabs } from 'antd';
 import './index.less';
 import WeiYuanSu from './weiyuansu';
 import Transition from './transition';
+import Animation from './animation';
 import Mask from './mask';
 import Juzhong from './juzhong';
 import Canvas from './canvas';
@@ -40,6 +41,7 @@ const Css3 = (props) => {
     { key: 'weiyuansu', component: <WeiYuanSu />, tab: '伪元素' },
     { key: 'OnePX', component: <OnePX />, tab: '1px' },
     { key: 'transition', component: <Transition />, tab: 'Transition' },
+    { key: 'animation', component: <Animation />, tab: 'Animation' },
     { key: 'Mask', component: <Mask />, tab: 'mask' },
     { key: 'Juzhong', component: <Juzhong />, tab: '居中' },
     { key: 'Canvas', component: <Canvas />, tab: 'Canvas' },

@@ -1,0 +1,34 @@
+@import "../../../../styles/common.less";
+
+// 第一种盒子
+.card-item {
+  width: 600px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 每行两列，均分宽度 */
+    gap: 10px; /* 每个格子之间的间隙 */
+  }
+
+  .grid-item {
+    display: flex;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .grid-item .label {
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .grid-item .value {
+    flex: 1;
+  }
+}
