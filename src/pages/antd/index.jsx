@@ -16,6 +16,9 @@ const InteractItem = (props) => {
       <div>
         <Link to="/antd/select">select</Link>
       </div>
+      <div>
+        <Link to="/antd/modal">modal</Link>
+      </div>
     </div>
   );
 };
