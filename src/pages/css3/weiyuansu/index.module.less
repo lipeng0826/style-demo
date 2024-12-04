@@ -1,0 +1,32 @@
+.status-style {
+    display: block;
+    :global {
+  
+      span::after {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-left: 4px;
+        vertical-align: middle;
+        border-radius: 8px;
+        content: '';
+      }
+  
+      .Turbo::after {
+        background: #5ed57e;
+      }
+      .Fast::after {
+        background: #5ed57e;
+      }
+      .Relaxed::after {
+        background: #ffad13;
+      }
+      .Exception::after {
+        background: #fd1a1a;
+      }
+      .Disabled::after {
+        background: #BCC0CC;
+      }
+  
+    }
+  }
