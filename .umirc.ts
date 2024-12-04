@@ -75,6 +75,10 @@ export default defineConfig({
       component: './antd/tree/index.jsx',
     },
     {
+      path: '/antd/modal',
+      component: './antd/modal/index.jsx',
+    },
+    {
       path: '/small-style/index',
       component: './smallStyle/index.jsx',
     },

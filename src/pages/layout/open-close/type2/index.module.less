@@ -1,0 +1,42 @@
+.custom-menu {
+  background: white;
+  border: 0;
+  border-radius: 0;
+  :global {
+    .ant-menu-item {
+      width: 100% !important;
+      margin: 0 !important;
+      border-radius: 0 !important;
+      outline: 0 !important;
+      transition: none !important;
+      svg {
+        fill: #292933;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+      }
+
+      &:active {
+        background-color: rgba(24, 144, 255, 0.15) !important;
+      }
+
+      &.ant-menu-item-selected {
+        box-sizing: border-box;
+        background: rgba(24, 144, 255, 0.15);
+        border-right: 4px solid #1890FF;
+        font-weight: 500;
+        svg {
+          fill: #1890FF;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}

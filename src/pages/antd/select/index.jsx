@@ -116,7 +116,7 @@ const App = () => (
       )}
         placeholder="select it"
         popupClassName='antd-select-antd-select-white-bg'
-        defaultOpen={true}
+        // defaultOpen={true}
       />
     </div>
   </div>
