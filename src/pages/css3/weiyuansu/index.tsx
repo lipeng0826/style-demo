@@ -47,7 +47,9 @@ const WeiYuanSu = () => {
           {list.map((item) => {
             return (
               <div key={item.id} className={Style['status-style']}>
-                <span className={item.status}> {StatusEnum[item.status as  keyof typeof StatusEnum]}</span>
+                <span className={item.status}>
+                  {StatusEnum[item.status as  keyof typeof StatusEnum]}
+                </span>
               </div>
             );
           })}
