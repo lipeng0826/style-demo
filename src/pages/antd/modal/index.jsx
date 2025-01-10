@@ -41,7 +41,7 @@ const App = () => {
         open={isModalVisible}
         onOk={handleOk}
         onCancel={handleCancel}
-        className='antd-modal'
+        className='modal-wrapper-class'
       >
         <p>Some contents...</p>
         <p>Some contents...</p>

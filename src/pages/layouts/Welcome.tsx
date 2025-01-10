@@ -57,6 +57,9 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/small-style/highlight">文字高亮</Link>
       </div>
+      <div>
+        <Link to="/small-style/img">图片相关</Link>
+      </div>
       {/* css样式学习 */}
       <div className="title">css样式学习</div>
       <div>

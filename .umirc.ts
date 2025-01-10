@@ -87,6 +87,10 @@ export default defineConfig({
       component: './smallStyle/highlight/index.jsx',
     },
     {
+      path: '/small-style/img',
+      component: './smallStyle/img/index.jsx',
+    },
+    {
       path: '/css3/index',
       component: './css3/index.jsx',
     },
