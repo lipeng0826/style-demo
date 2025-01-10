@@ -1,8 +1,18 @@
 /* eslint-disable react/no-unknown-property */
 import React, { useState, useEffect } from 'react';
+import { Button } from 'antd';
+import Info from '@/components/Info/index';
+import Svg1 from './svg/1.svg';
+import { Copy2Icon } from './svg/index'
 const SVG = (props) => {
+
+  const [color, setColor] = useState(undefined);
+
   return (
     <div id="css3-svg">
+      <Info>
+        直接写本地
+      </Info>
       <svg
         version="1.1"
         baseProfile="full"
@@ -45,6 +55,19 @@ const SVG = (props) => {
           </text>
         </g>
       </svg>
+      <Info>
+        通过img的src引入
+        <p>简单，但是无法修改属性</p>
+      </Info>
+      <img src={Svg1}></img>
+      <Info>
+        通过在一个文件里统一管理一堆svg，然后返回每一个svg<br/>
+        这样就可以修改属性，也不用写到当前文件
+      </Info>
+      <div style={{ marginLeft: 20 }}>
+        <Button onClick={() => setColor(color ? undefined : 'red')}>修改颜色</Button>
+        <span style={{ marginLeft: 20 }}><Copy2Icon fill={color} /></span>
+      </div>
     </div>
   );
 };
