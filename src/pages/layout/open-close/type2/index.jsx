@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu } from 'antd';
+import { Button, Menu } from 'antd';
 import Style from './index.module.less';
 import MyIcon from './icon';
 import Info from '@/components/Info/index';
@@ -23,17 +23,25 @@ const InteractTemplate = () => {
   ]);
 
   const [current, setCurrent] = useState('1');
+  const [width, setWidth] = useState(200);
 
   const setMenu = (e) => {
     setCurrent(e.key);
   };
+  
+  const udpateOpen = () => {
+    setWidth(width === 200 ? 55: 200)
+  }
 
   return (
     <div>
       <Info>
         Antd Menu修改
       </Info>
-      <div style={{ width: 200, height: '100%' }}>
+      <div style={{ marginBottom: 20 }}>
+        <Button onClick={udpateOpen}>切换</Button>
+      </div>
+      <div style={{ width: width, height: '100%', transition: 'width 0.3s', }}>
         <Menu
           className={Style['custom-menu']}
           theme='light'

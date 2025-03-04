@@ -5,16 +5,21 @@ import { Link } from 'umi';
 const Welcome: React.FC = () => {
   return (
     <div className="list-touchbar">
-      {/* 盒子模型demo */}
-      <div className="title">盒子模型</div>
-      <div>
-        <Link to="/box-model/index">盒子模型</Link>
-      </div>
       {/* 布局相关 */}
       <div className="title">布局相关</div>
       <div>
+        <Link to="/box-model/index">盒子模型</Link>
+      </div>
+      <div>
+        <Link to="/box-model/index">块元素，行内块，行内元素</Link>     
+      </div>
+      <div>
         <Link to="/layout/flex">flex布局</Link>
       </div>
+      <div>
+        <Link to="/layout/flex">grid布局</Link>
+      </div>
+      <div className="title">布局实例</div>
       <div>
         <Link to="/layout/input-layout">输入布局</Link>
       </div>
