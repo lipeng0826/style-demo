@@ -34,6 +34,9 @@ const list = [
 ];
 
 const WeiYuanSu = () => {
+
+  const [active, setActive] = useState(false);
+
   return (
       <>
         <div>
@@ -53,6 +56,16 @@ const WeiYuanSu = () => {
               </div>
             );
           })}
+        </div>
+        <Info>
+          伪元素
+          <p>这里给容器添加了个一个边框,但是不会改变形状</p>
+        </Info>
+        <div className={Style.boxStyle } onClick={() => setActive(!active)}>
+          <div className={`thumbnail ${active ? "active" : ""}`}>
+            <img>
+            </img>
+          </div>
         </div>
       </>
   );

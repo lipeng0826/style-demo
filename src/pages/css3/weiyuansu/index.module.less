@@ -1,32 +1,57 @@
 .status-style {
-    display: block;
-    :global {
-  
-      span::after {
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        margin-left: 4px;
-        vertical-align: middle;
-        border-radius: 8px;
-        content: '';
-      }
-  
-      .Turbo::after {
-        background: #5ed57e;
-      }
-      .Fast::after {
-        background: #5ed57e;
-      }
-      .Relaxed::after {
-        background: #ffad13;
-      }
-      .Exception::after {
-        background: #fd1a1a;
-      }
-      .Disabled::after {
-        background: #BCC0CC;
-      }
-  
+  display: block;
+  :global {
+    span::after {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-left: 4px;
+      vertical-align: middle;
+      border-radius: 8px;
+      content: "";
+    }
+
+    .Turbo::after {
+      background: #5ed57e;
+    }
+    .Fast::after {
+      background: #5ed57e;
+    }
+    .Relaxed::after {
+      background: #ffad13;
+    }
+    .Exception::after {
+      background: #fd1a1a;
+    }
+    .Disabled::after {
+      background: #bcc0cc;
     }
   }
+}
+
+.boxStyle {
+  :global {
+    .thumbnail {
+      width: 100px;
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      position: relative;
+
+      background: url("./images/1.png") no-repeat;
+      background-size: 100% 100%;
+
+      &.active::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        border: 2px solid #165dff;
+        border-radius: 8px;
+        content: "";
+      }
+    }
+  }
+}
