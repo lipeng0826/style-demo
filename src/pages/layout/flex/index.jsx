@@ -49,42 +49,38 @@ const Flex = (props) => {
   }`)}
           交叉轴：垂直于主轴的排列方式
           <br />
-          2.当一个元素使用display:flex进行布局之后，子元素会呈现一定的特性：
+          1.5.当一个元素使用display:flex进行布局之后，子元素会呈现一定的特性：
           <br />
           元素排列为一行等特性
           <br />
-          3.flex-wrap：
+          2.flex-wrap：
           <br />
-          属性:wrap, nowrap（wrap英文是换行的意思）
+          属性:wrap, nowrap（默认是nowrap;wrap英文是换行的意思）
           <br />
           {CssCode(`.box{
   flex-wrap: nowrap | wrap | wrap-reverse;
 }`)}
-          flex默认是一维属性，设置值为nowrap的时候他的内容会收缩成一行；设置为wrap的时候
+          flex默认是一维属性，设置值为nowrap的时候他的内容会收缩成一行；设置为wrap的时候，内容会换行
           <br />
-          flex内容属性：
-          <br />
-          1.flex-basis
-          <br />
-          4.flex-flow：
+          3.flex-flow：
           <br />
           是flex-direction和flex-wrap的简写，默认值：row nowrap
           {CssCode(`.box {
   flex-flow: <flex-direction> || <flex-wrap>;
 }`)}
-          5.justify-content这个经常用
+          4.justify-content这个经常用
           <br />
           {CssCode(`.box {
   justify-content: flex-start | flex-end | center | space-between | space-around;
 }`)}
-          6.align-items属性
+          5.align-items属性
           <br />
           在垂直轴上的顺序
           <br />
           {CssCode(`.box {
   align-items: flex-start | flex-end | center | baseline | stretch;
 }`)}
-          7.align-content属性
+          6.align-content属性
           <br />
           {CssCode(`.box {
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
@@ -112,7 +108,7 @@ const Flex = (props) => {
           {CssCode(`.item {
   flex-grow: <number>; /* default 0 */
 }`)}
-          3.flex-shrink 项目缩小 默认为1，就是空间不足的时候，缩小项目
+          3.flex-shrink 项目缩小 默认为1，就是空间不足的时候，缩小项目,0的元素不缩小
           {CssCode(`.item {
   flex-shrink: <number>; /* default 1 */
 }`)}
@@ -125,7 +121,8 @@ const Flex = (props) => {
           {CssCode(`.item {
   flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }`)}
-          flex:1 表示： flex: 1, 1, 0%; <br />
+          flex:1 表示： flex: 1, 1, 0%; 就是可以放大，可以缩小，默认宽度是0，这样多个元素可以实现等比放大缩小<br />
+          flex:none 表示： flex: 0, 0, auto; 就是不放大，不缩小，由内容决定<br />
           <br />
           6.align-self flex属性是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为0 1
           auto。后两个属性可选。
