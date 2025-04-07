@@ -1,0 +1,18 @@
+.middleEllipsis {
+  width: 200px;
+  position: relative;
+  
+  .filename {
+    display: inline-block;
+    max-width: calc(100% - 30px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .extension {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+} 

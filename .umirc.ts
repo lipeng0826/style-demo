@@ -95,6 +95,10 @@ export default defineConfig({
       component: './css3/index.jsx',
     },
     {
+      path: '/element/text-show',
+      component: './basic-element/text-show/index.tsx',
+    },
+    {
       path: '/tools/wheel',
       component: './tools/大转盘/index.jsx',
     },

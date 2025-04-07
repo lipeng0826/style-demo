@@ -70,6 +70,11 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/css3/index">css入口</Link>
       </div>
+      {/* 基础组件的样式 */}
+      <div className="title">基础组件的样式</div>
+      <div>
+        <Link to="/element/text-show">文本展示</Link>
+      </div>
       {/* tools */}
       <div className="title">tools</div>
       <div>

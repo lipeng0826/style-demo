@@ -16,7 +16,7 @@ import HuanDengPian from './huan-deng-pic';
 import MP from './m-p';
 import OnePX from './onePX';
 import Other from './other';
-
+import Common from './common';
 const key = 'style-demo-css3-tabValue';
 
 const Css3 = (props) => {
@@ -52,6 +52,7 @@ const Css3 = (props) => {
     { key: 'icon', component: <Icon />, tab: 'css图标' },
     { key: 'HuanDengPian', component: <HuanDengPian />, tab: '幻灯片' },
     { key: 'M-P', component: <MP />, tab: 'M-P' },
+    { key: 'common', component: <Common />, tab: '一些基本的通用样式' },
     { key: 'other', component: <Other />, tab: '未分类' },
   ];
 

@@ -4,7 +4,9 @@ import './index.less';
 const Icon = (props) => {
   return (
     <div id="icon">
-      <Circle />
+      <div className="icon-item">
+        111
+      </div>
     </div>
   );
 };

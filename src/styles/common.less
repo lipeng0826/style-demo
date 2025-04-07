@@ -1,15 +1,18 @@
 // 滚动条公共样式
 .scroll-bar {
+  // 滚动条
   &::-webkit-scrollbar {
     width: 6px;
     height: 10px;
   }
 
+  // 滚动条的样式
   &::-webkit-scrollbar-thumb {
     background-color: #d9d9d9;
     border-radius: 32px;
   }
 
+  // 滚动条轨道（背景部分）
   &::-webkit-scrollbar-track {
     background-color: #f0f0f0;
     border-radius: 32px;
@@ -58,4 +61,20 @@
   -webkit-line-clamp: @value;
   overflow: hidden;
   word-break: break-all; // 让文字可以换行
+}
+
+// 禁用文本选择
+.no-select {
+  user-select: none;
+}
+
+// 禁用鼠标事件
+.no-pointer-events {
+  pointer-events: none;
+}
+
+// 禁用所有交互（包括文本选择和鼠标事件）
+.no-interaction {
+  user-select: none;
+  pointer-events: none;
 }
