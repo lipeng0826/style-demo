@@ -1,12 +1,12 @@
 import React from 'react';
-import './Welcome.less';
+import styles from './Welcome.module.less';
 import { Link } from 'umi';
 
 const Welcome: React.FC = () => {
   return (
-    <div className="list-touchbar">
+    <div className={styles.listTouchbar}>
       {/* 布局相关 */}
-      <div className="title">布局相关</div>
+      <div className={styles.title}>布局相关</div>
       <div>
         <Link to="/box-model/index">盒子模型</Link>
       </div>
@@ -19,7 +19,7 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/layout/flex">grid布局</Link>
       </div>
-      <div className="title">布局实例</div>
+      <div className={styles.title}>布局实例</div>
       <div>
         <Link to="/layout/input-layout">输入布局</Link>
       </div>
@@ -32,8 +32,13 @@ const Welcome: React.FC = () => {
       <div>
         <Link to="/layout/open-close">开关样式（open-close）</Link>
       </div>
+      {/* 基础组件的样式 */}
+      <div className={styles.title}>基础组件的样式</div>
+      <div>
+        <Link to="/element/text-show">文本展示</Link>
+      </div>
       {/* 组件相关 */}
-      <div className="title">组件相关</div>
+      <div className={styles.title}>组件相关</div>
       <div>
         <Link to="/element/scroll">滚动条样式(scroll-bar)</Link>
       </div>
@@ -50,12 +55,12 @@ const Welcome: React.FC = () => {
         <Link to="/element/float-top">固定顶部浮动</Link>
       </div>
       {/* antd相关 */}
-      <div className="title">antd相关</div>
+      <div className={styles.title}>antd相关</div>
       <div>
         <Link to="/antd/index">antd 相关页面</Link>
       </div>
       {/* small-style */}
-      <div className="title">小样式</div>
+      <div className={styles.title}>小样式</div>
       <div>
         <Link to="/small-style/index">入口</Link>
       </div>
@@ -66,17 +71,12 @@ const Welcome: React.FC = () => {
         <Link to="/small-style/img">图片相关</Link>
       </div>
       {/* css样式学习 */}
-      <div className="title">css样式学习</div>
+      <div className={styles.title}>css样式学习</div>
       <div>
         <Link to="/css3/index">css入口</Link>
       </div>
-      {/* 基础组件的样式 */}
-      <div className="title">基础组件的样式</div>
-      <div>
-        <Link to="/element/text-show">文本展示</Link>
-      </div>
       {/* tools */}
-      <div className="title">tools</div>
+      <div className={styles.title}>tools</div>
       <div>
         <Link to="/tools/wheel">大转盘</Link>
       </div>

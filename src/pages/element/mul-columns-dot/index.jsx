@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
 import { Tooltip } from 'antd';
+import Info from '@/components/Info/index';
 import './index.less';
+
+const TextView = (props) => {
+  const { text, maxLength } = props;
+  if (text.length > maxLength) {
+    return (
+      <div>
+        <Tooltip title={text}>
+          <span className="ellipsis">{text.slice(0, maxLength)}</span>
+        </Tooltip>
+      </div>
+    )
+  }
+  return text;
+}
 
 const InteractItem = (props) => {
   const [groupInfo, setGroupInfo] = useState({
@@ -78,51 +93,56 @@ const InteractItem = (props) => {
   });
 
   return (
-    <div className="lesson-in-info-title-wrapper">
-      <span className="lesson-in-info-title">
-        <span className="title">
-          {groupInfo.groupName}
-          <span className="split" />
-          {groupInfo.itvCourseName.length > 10 ? (
-            <Tooltip
-              placement="top"
-              title={
-                <span>
-                  <span>{groupInfo.itvCourseName}</span>
-                </span>
-              }
-            >
+    <>
+      <Info>效果展示</Info>
+      <div className="lesson-in-info-title-wrapper">
+        <span className="lesson-in-info-title">
+          <span className="title">
+            {groupInfo.groupName}
+            <span className="split" />
+            {groupInfo.itvCourseName.length > 10 ? (
+              <Tooltip
+                placement="top"
+                title={
+                  <span>
+                    <span>{groupInfo.itvCourseName}</span>
+                  </span>
+                }
+              >
+                <span className="limit-content">{groupInfo.itvCourseName}</span>
+              </Tooltip>
+            ) : (
               <span className="limit-content">{groupInfo.itvCourseName}</span>
-            </Tooltip>
-          ) : (
-            <span className="limit-content">{groupInfo.itvCourseName}</span>
-          )}
-        </span>
-        {/* <!--  --> */}
-        <span className="item">第{lessonInfo.lessonNum}讲</span>
-        {/* <!--  --> */}
-        <span className="item">
-          {lessonInfo.lessonName.length > 10 ? (
-            <Tooltip
-              placement="top"
-              title={
-                <span slot="title">
-                  <span>{lessonInfo.lessonName}</span>
-                </span>
-              }
-            >
+            )}
+          </span>
+          {/* <!--  --> */}
+          <span className="item">第{lessonInfo.lessonNum}讲</span>
+          {/* <!--  --> */}
+          <span className="item">
+            {lessonInfo.lessonName.length > 10 ? (
+              <Tooltip
+                placement="top"
+                title={
+                  <span slot="title">
+                    <span>{lessonInfo.lessonName}</span>
+                  </span>
+                }
+              >
+                <span className="limit-content">{lessonInfo.lessonName}</span>
+              </Tooltip>
+            ) : (
               <span className="limit-content">{lessonInfo.lessonName}</span>
-            </Tooltip>
-          ) : (
-            <span className="limit-content">{lessonInfo.lessonName}</span>
-          )}
+            )}
+          </span>
+          {/* <!--  --> */}
+          <span className="item">共{groupInfo.studentNum}人</span>
+          {/* <!--  --> */}
+          <span className="item">课程ID：{groupInfo.classNameTypeId}</span>
         </span>
-        {/* <!--  --> */}
-        <span className="item">共{groupInfo.studentNum}人</span>
-        {/* <!--  --> */}
-        <span className="item">课程ID：{groupInfo.classNameTypeId}</span>
-      </span>
-    </div>
+      </div>
+      <Info>一个支持某个长度，然后多出展示省略和hover，否则展示全部的组件</Info>
+      <TextView text="123456789011212121212" maxLength={10} />
+    </>
   );
 };
 

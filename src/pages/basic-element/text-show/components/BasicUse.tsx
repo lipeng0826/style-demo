@@ -1,5 +1,6 @@
 import Info from "@/components/Info/index";
 import styles from "./basicUse.module.less";
+import HoverText from "./HoverText";
 import { Tooltip } from "antd";
 
 export default function TextShow() {
@@ -22,6 +23,11 @@ export default function TextShow() {
           <div className={styles.singleLineEllipsis}>
             <p>今天吃饭了吗？</p>
           </div>
+          <HoverText
+            text="今天吃饭了吗？"
+            line={1}
+            limitType={{ type: "length", maxLength: 20 }}
+          />
         </div>
         <div>
           <p>2.文件多行省略</p>
@@ -35,9 +41,9 @@ export default function TextShow() {
           <p>3.文件单行省略+hover展示全部</p>
           <div className={styles.singleLineEllipsis}>
             <p>
-                <Tooltip title="今天吃饭了吗？">
-                    <span>今天吃饭了吗？</span>
-                </Tooltip>
+              <Tooltip title="今天吃饭了吗？">
+                <span>今天吃饭了吗？</span>
+              </Tooltip>
             </p>
           </div>
         </div>

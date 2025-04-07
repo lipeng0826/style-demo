@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Tabs } from 'antd';
 import BasicUse from './components/BasicUse';
 import FileTextView from './components/FileTextView';
-
 const key = 'basic-element-text-show-tabValue';
 
 const tabComponents = [

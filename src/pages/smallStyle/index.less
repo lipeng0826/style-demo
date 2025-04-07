@@ -1,3 +1,40 @@
-.small-style-wrapper {
-  padding: 20px;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* 确保容器有足够的高度 */
+  .flex-item-1 {
+    overflow: auto;
+
+    button {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+
+    .inner-item {
+      padding: 10px; /* 可选：增加一些内边距 */
+      border: 1px solid #ccc; /* 可选：增加边框 */
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  .chong-qi-item {
+    flex: 1;
+  }
+
+  .flex-item-2 {
+    height: 200px;
+    background-color: #f0f0f0; /* 你可以根据需要更改背景色 */
+  }
+}
+
+.inner-item > div {
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.inner-item > div:hover {
+  background-color: #f5f5f5;
 }
