@@ -16,9 +16,5 @@ interface IProps {
 export default function HoverText(props: IProps) {
   const { text, line, limitType } = props;
 
-  if (limitType.type === "length") {
-    return <div className={styles.hoverText}>HoverText</div>;
-  }
-
   return <div className={styles.hoverText}>HoverText</div>;
 }
