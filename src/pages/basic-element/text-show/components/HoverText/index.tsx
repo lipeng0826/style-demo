@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./index.module.less";
-
+import "./index.less";
+import { Tooltip } from "antd";
 interface LimitType {
   type: "length" | "line";
   maxLength?: number;
@@ -9,12 +9,30 @@ interface LimitType {
 
 interface IProps {
   text: string;
-  line: number;
-  limitType: LimitType;
+  lines?: number;
+  limitType?: LimitType;
+  showTip?: boolean;
 }
 
 export default function HoverText(props: IProps) {
-  const { text, line, limitType } = props;
+  const { text, limitType, lines, showTip = false } = props;
 
-  return <div className={styles.hoverText}>HoverText</div>;
+  const content = (
+    <div
+      className="hoverText"
+      style={
+        {
+          "--lines": lines,
+        } as React.CSSProperties
+      }
+    >
+      {text}
+    </div>
+  );
+
+  if (showTip) {
+    return <Tooltip title={text}>{content}</Tooltip>;
+  }
+
+  return content;
 }

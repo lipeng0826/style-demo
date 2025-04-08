@@ -12,7 +12,7 @@ const tabComponents = [
         <BasicUse />
       </>
     ), 
-    tab: '说明'
+    tab: '固定内容区域文本省略显示'
   },
   { 
     key: 'special', 
@@ -21,7 +21,7 @@ const tabComponents = [
         <FileTextView />
       </>
     ), 
-    tab: '特殊文件名的省略' 
+    tab: '文件名的省略'
   }
 ];
 
