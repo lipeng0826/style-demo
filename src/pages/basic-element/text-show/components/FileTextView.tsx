@@ -49,7 +49,10 @@ export default function TextShow() {
       <div style={{ marginLeft: 24 }}>
         <div>
           <p>JS实现方案</p>
-          <JSFileTextView text="1111233333.png" maxLength={10} />
+          <JSFileTextView text="myPng1234567890.png" maxLength={10} />
+          <JSFileTextView text="myDocx1234567890.docx" maxLength={10} />
+          <JSFileTextView text="myMd1234567890.md" maxLength={10} />
+          <JSFileTextView text="myXlsx1234567890.xlsx" maxLength={10} />
         </div>
         <div>
           <p>CSS实现方案</p>
