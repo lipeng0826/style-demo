@@ -71,6 +71,16 @@ const InteractGameItem = (props) => {
         <div>11111</div>
         <div>11111</div>
       </div>
+      <div className="container4">
+        <div>有滚动条的元素水平居中</div>
+        <div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+          <div>--------------------</div>
+          <div>水平居中是不包括右边的滚动条的</div>
+          <div>--------------------</div>
+          <div>如果这个元素要和其他元素垂直对齐的话，可以设置这个元素的overflow:scroll,这样这个元素的滚动条就会显示出来，不超出内容的话，滚动条不会显示，但是有宽度，然后调整这个元素的margin-left,就可以实现水平居中</div>
+          <div>--------------------</div>
+        </div>
+      </div>
     </div>
   );
 };

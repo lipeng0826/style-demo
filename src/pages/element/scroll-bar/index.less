@@ -2,6 +2,7 @@
 
 .element-scroll {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 20px;
     grid-gap: 20px;
     .container1 {
@@ -22,6 +23,13 @@
         height: 200px;
         background: #bae7ff;
         overflow: auto; // 只有加了这个默认超出才会滚动
+        .scroll-bar2() // 引用公共样式
+    }
+    .container4 {
+        width: 200px;
+        height: 200px;
+        background: #bae7ff;
+        overflow-y: scroll;
         .scroll-bar2() // 引用公共样式
     }
 }
