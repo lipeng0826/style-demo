@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Tabs } from 'antd';
 import BasicUse from './components/BasicUse';
 import FileTextView from './components/FileTextView';
+import BreakParagraph from './components/breakParagraph/index';
 const key = 'basic-element-text-show-tabValue';
 
 const tabComponents = [
@@ -14,7 +15,7 @@ const tabComponents = [
     ), 
     tab: '固定内容区域文本省略显示'
   },
-  { 
+  {
     key: 'special', 
     component: (
       <>
@@ -22,6 +23,13 @@ const tabComponents = [
       </>
     ), 
     tab: '文件名的省略'
+  },
+  {
+    key: 'content-break', 
+    component: (
+      <BreakParagraph />
+    ), 
+    tab: '让内容换行，不会超出'
   }
 ];
 

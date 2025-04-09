@@ -17,7 +17,25 @@ import './index.less'
 const InteractGameItem = (props) => {
   return (
     <div className="element-scroll">
-      <div className="container">
+      <div className="container1">
+        <div>默认滚动条</div>
+        <div>默认滚动条是会有滚动的时候才显示滚动条</div>
+        <div>不滚动不显示滚动条的</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+        <div>11111</div>
+      </div>
+      <div className="container2">
         <div>修改滚动条样式</div>
         <div>11111</div>
         <div>11111</div>
@@ -35,7 +53,7 @@ const InteractGameItem = (props) => {
         <div>11111</div>
         <div>11111</div>
       </div>
-      <div className="container2">
+      <div className="container3">
         <div>hover上才有滚动条样式</div>
         <div>11111</div>
         <div>11111</div>

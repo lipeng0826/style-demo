@@ -21,6 +21,9 @@ const Welcome: React.FC = () => {
       </div>
       <div className={styles.title}>布局实例</div>
       <div>
+        <Link to="/layout/scroll-position">滚动位置</Link>
+      </div>
+      <div>
         <Link to="/layout/input-layout">输入布局</Link>
       </div>
       <div>

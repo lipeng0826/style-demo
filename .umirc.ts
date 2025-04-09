@@ -15,6 +15,10 @@ export default defineConfig({
       component: './layout/flex/index.jsx',
     },
     {
+      path: '/layout/scroll-position',
+      component: './layout/scroll-position/index.jsx',
+    },
+    {
       path: '/layout/input-layout',
       component: './layout/input-layout/index.jsx',
     },
