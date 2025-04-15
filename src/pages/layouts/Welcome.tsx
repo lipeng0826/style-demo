@@ -27,6 +27,9 @@ const Welcome: React.FC = () => {
         <Link to="/layout/input-layout">输入布局</Link>
       </div>
       <div>
+        <Link to="/layout/pageLevel/top-bottom">上下布局</Link>
+      </div>
+      <div>
         <Link to="/layout/pageLevel/top-middle-bottom">上中下布局</Link>
       </div>
       <div>

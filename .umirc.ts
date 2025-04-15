@@ -23,6 +23,10 @@ export default defineConfig({
       component: './layout/input-layout/index.jsx',
     },
     {
+      path: '/layout/pageLevel/top-bottom',
+      component: './layout/pageLevel/top-bottom/index.tsx',
+    },
+    {
       path: '/layout/pageLevel/top-middle-bottom',
       component: './layout/pageLevel/top-middle-bottom/index.jsx',
     },

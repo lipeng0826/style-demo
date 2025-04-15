@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Mask</title>
+    <style>
+        .video-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        video {
+            width: 600px;
+            height: auto;
+            display: block;
+        }
+
+        .mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 40px); /* 避免遮挡控制条 */
+            background: rgba(0, 0, 0, 0.1); /* 半透明遮罩 */
+            pointer-events: auto; /* 拦截点击 */
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="video" controls>
+            <source src="https://ai-tool-static-test.ledupeiyou.com/newImg2video/a05dd2bb-2840-4eca-9aa8-893d3a6ebd9f.mp4?q-sign-algorithm=sha1&q-ak=AKIDZSw_OBuQgjpUxx8yligxR_VEqpV4_7zuSfJm_ZG_DPXqo_iGyQMrSijbAXQUy1g2&q-sign-time=1742780883;1742784483&q-key-time=1742780883;1742784483&q-header-list=host&q-url-param-list=&q-signature=777821b560595111583c7804395bf47df82f6cf3&x-cos-security-token=2s7f1fPPT6wcCt2hz54chH7EWV6HZ5oabf5e3263b9cab1627e0267104e27a59eiZjzfwet_N6h2IApRMgToNREPrBL35drg7WqzUAnXJ3Tg-5sIlK4dX5JX7ncu4djXEqC6MyoxITxfsl3ggHph4MhAKtjalV-ymMBl2M6X5xVOkofmCyFa6OKxyp12kLL1XXLcPojiNU-WKuKaF-eB8iyEUQ2DHS-SPiEntZt1OpgY7tCK1IWLtULD0REC6ROJFUqB60riE-IXgAh_lZytr0lx6JeZeaMVpMBT_JmtggfNMsFWW4Hty6-rONld9I5mAx5C8a4MDA4l4f6IIZsGtF7n1xN5sNY1WzrIpoaTgZVU_hb-GRDvHNhkZgEGWWZ3DPlZQ4-lXcPUMEare_APwbwngE6ATcuGwyZEqx-RZ7weklYIKLpdJDAGiJhYPGyrn2ls0lPTMcIM5FYQXnHWSI1FVjtFvI1LkRHJlmVeA2xKgf89-IFE1QZqGz1qUloEpBE29SQPGflCRdtMrrEF6ZxEfXB00EqE0_hJyGijzy4gQJmYXRW-DbKtdNjAvDwhDQopnQMPhIeHpmdlZZ28FB5i2pgS5TFSyDssQWWmxsWfVVeQWm9a6l3rwLndv3Fui9sMX_FLCpG0PtFvBznHfrKjtuDWl3ZJR-izuKPJgJGfTz5o_9JaY59-kg3ekWN4k0MrNa82rcjQ-3i9ycPvr2Y1OkJJI9UvtRp7wLiHnpZKTbFbOL8pAzZbdKtj97F" type="video/mp4">
+            您的浏览器不支持 video 标签。
+        </video>
+        <div class="mask"></div>
+    </div>
+
+    <script>
+        document.querySelector('.mask').addEventListener('click', (e) => {
+            e.stopPropagation();
+            console.log('点击拦截');
+        });
+    </script>
+</body>
+</html>
